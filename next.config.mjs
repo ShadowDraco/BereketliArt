@@ -13,7 +13,7 @@ export default(withBundleAnalyzer({
   experimental: {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
-   images: {
+   /*images: {
     remotePatterns: [
       {
         protocol: 'https',
@@ -21,5 +21,5 @@ export default(withBundleAnalyzer({
      
       },
     ],
-  },
+  },*/
 }));
