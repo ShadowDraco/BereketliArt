@@ -10,45 +10,85 @@ import {
   rem,
   useMantineTheme,
 } from '@mantine/core';
-import { IconGauge, IconUser, IconCookie } from '@tabler/icons-react';
+import {
+  IconHealthRecognition,
+  IconUser,
+  IconPalette,
+  IconBulb,
+  IconNews,
+  IconAddressBook,
+} from '@tabler/icons-react';
 import classes from './FeaturesGrid.module.css';
+import Link from 'next/link';
 
-const mockdata = [
+const data = [
   {
-    title: 'Extreme performance',
+    title: 'About',
     description:
-      'This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit',
-    icon: IconGauge,
-  },
-  {
-    title: 'Privacy focused',
-    description:
-      'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma',
+      'Metin Bereketli is an internationally acclaimed Los Angeles based painter. His contemporary works have been featured in museums, galleries, and exhibitions worldwide including...',
     icon: IconUser,
+    url: '/about',
   },
   {
-    title: 'No third parties',
+    title: 'Works',
     description:
-      'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
-    icon: IconCookie,
+      'Metin is an artist who has dedicated himself to the evolution of mankind with his themes. His paintings are not only a display of vivid colors and powerful imagery, but also a celebration of oneness with the Human Family in the Circle of Life.',
+    icon: IconPalette,
+    url: '/works',
+  },
+  {
+    title: 'Features',
+    description:
+      "Smithsonian Institution National Museum of Art Library, Sotheby's London, California Science Center, Exposition Park... and more!",
+    icon: IconBulb,
+    url: '/features',
+  },
+  {
+    title: 'Charity',
+    description:
+      'To promote healing through giving, Metin has generously supported many charities with his art, including...',
+    icon: IconHealthRecognition,
+    url: '/charity',
+  },
+  {
+    title: 'Press',
+    description:
+      'Metin and his intentive style have earned the esteem of many American Leaders and received critical acclaim in articles published...',
+    icon: IconNews,
+    url: '/press',
+  },
+  {
+    title: 'Contact / Inquire',
+    description:
+      "If you want to learn more, make an inquiry, or feature Metin's art please make contact.",
+    icon: IconAddressBook,
+    url: '/contact',
   },
 ];
 
 export function FeaturesGrid() {
   const theme = useMantineTheme();
-  const features = mockdata.map((feature) => (
-    <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
-      <feature.icon
-        style={{ width: rem(50), height: rem(50) }}
-        stroke={2}
-        color={theme.colors.blue[6]}
-      />
-      <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
-        {feature.title}
-      </Text>
-      <Text fz="sm" c="dimmed" mt="sm">
-        {feature.description}
-      </Text>
+  const features = data.map((feature) => (
+    <Card
+      key={feature.title}
+      shadow="md"
+      radius="md"
+      className={`${classes.card} hover-expand`}
+      padding="xl"
+    >
+      <Link href={feature.url} style={{ textDecoration: 'none', color: 'inherit' }}>
+        <feature.icon
+          style={{ width: rem(50), height: rem(50) }}
+          stroke={2}
+          color={theme.colors.blue[6]}
+        />
+        <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
+          {feature.title}
+        </Text>
+        <Text fz="sm" c="dimmed" mt="sm">
+          {feature.description}
+        </Text>
+      </Link>
     </Card>
   ));
 
@@ -56,17 +96,25 @@ export function FeaturesGrid() {
     <Container size="lg" py="xl">
       <Group justify="center">
         <Badge variant="filled" size="lg">
-          Best company ever
+          Highly Featured
+        </Badge>
+
+        <Badge variant="filled" size="lg">
+          Internationally acclaimed
+        </Badge>
+        <Badge variant="filled" size="lg">
+          Powerful imagery
         </Badge>
       </Group>
 
       <Title order={2} className={classes.title} ta="center" mt="sm">
-        Integrate effortlessly with any technology stack
+        Why is Metin's art important and valuable?
       </Title>
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">
-        Every once in a while, you’ll see a Golbat that’s missing some fangs. This happens when
-        hunger drives it to try biting a Steel-type Pokémon.
+        Metin believes divine inspiration plays a great part in the creation of his paintings. His
+        art appeals to the eyes and the heart. His images communicate important human messages about
+        healing and the promotion of world peace.
       </Text>
 
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>

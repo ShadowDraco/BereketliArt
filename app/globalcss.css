@@ -21,12 +21,35 @@
 }
 
 :root {
-  --d: 2500ms;
+  --d: 6500ms;
   --angle: 90deg;
   --gradX: 100%;
   --gradY: 50%;
   --c1: rgba(168, 239, 255, 1);
   --c2: rgba(168, 239, 255, 0.1);
+}
+
+.hover-expand {
+  transition: 0.6s transform ease-in-out;
+  transform: scale(1);
+}
+
+.hover-expand:hover {
+  transform: scale(1.1);
+}
+
+.conic-border-active {
+  border: 0.35rem solid;
+
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    60;
+  animation: borderRotate var(--d) linear infinite forwards;
 }
 
 .conic-border:hover {

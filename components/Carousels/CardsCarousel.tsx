@@ -1,7 +1,9 @@
 'use client';
+
 import { Carousel } from '@mantine/carousel';
 import { useMediaQuery } from '@mantine/hooks';
-import { Paper, Text, Title, Button, useMantineTheme, rem, Container } from '@mantine/core';
+import { Paper, Title, Button, useMantineTheme, rem } from '@mantine/core';
+import Link from 'next/link';
 import classes from './CardsCarousel.module.css';
 import Quantum1 from '/public/FrontArt/QuantumHollywood1.jpg';
 import Quantum2 from '/public/FrontArt/QuantumHollywood2.jpg';
@@ -11,10 +13,11 @@ interface CardProps {
   image: string;
   title: string;
   category: string;
-  color?: string;
+  background?: boolean;
+  url: string;
 }
 
-function Card({ image, title, category, color }: CardProps) {
+function Card({ image, title, category, background, url }: CardProps) {
   return (
     <Paper
       shadow="md"
@@ -23,19 +26,29 @@ function Card({ image, title, category, color }: CardProps) {
       style={{
         backgroundImage: `url(${image})`,
       }}
-      className={`${classes.card} conic-border`}
+      className={`${classes.card}`}
     >
       <div>
-        <Text className={classes.category} size="xs" style={{ color: color ? color : 'white' }}>
-          {category}
-        </Text>
-        <Title order={3} className={classes.title} style={{ color: color ? color : 'white' }}>
+        <Title
+          order={3}
+          className={classes.title}
+          style={{
+            backgroundColor: background ? 'rgba(0,0,0,0.7)' : 'transparent',
+
+            padding: 8,
+            paddingLeft: 10,
+            paddingRight: 10,
+            borderRadius: '50%',
+          }}
+        >
           {title}
         </Title>
       </div>
-      <Button variant="white" color="dark">
-        See more
-      </Button>
+      <Link href={url}>
+        <Button variant="white" color="dark">
+          See more
+        </Button>
+      </Link>
     </Paper>
   );
 }
@@ -44,36 +57,28 @@ const data = [
   {
     image: Quantum1.src,
     title: 'Quantum Hollywood 1',
+    url: '/work/quantum-hollywood-1',
     category: 'Inspired',
   },
   {
     image: Quantum2.src,
     title: 'Quantum Hollywood 2',
+    url: '/work/quantum-hollywood-2',
     category: 'Inspired',
   },
   {
     image: Diversity2.src,
     title: 'Diversity 2',
+    url: '/work/diversity-2',
     category: 'Diversity',
-    color: 'black',
+    background: true,
   },
   {
     image: GoldenEagles.src,
     title: 'Golden Eagles',
+    url: '/work/golden-eagles',
     category: 'Nature',
-    color: 'black',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Best places to visit this winter',
-    category: 'tourism',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1582721478779-0ae163c05a60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Active volcanos reviews: travel at your own risk',
-    category: 'nature',
+    background: true,
   },
 ];
 

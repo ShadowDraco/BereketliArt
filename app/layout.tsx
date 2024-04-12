@@ -2,6 +2,7 @@ import '@mantine/core/styles.css';
 import React from 'react';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
+import { Analytics } from '@vercel/analytics/react';
 import './globalcss.css';
 import '@mantine/carousel/styles.css';
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: any }) {
         <MantineProvider theme={theme} defaultColorScheme="dark">
           {children}
         </MantineProvider>
+        <Analytics />
       </body>
     </html>
   );
