@@ -60,7 +60,7 @@ const data = [
   {
     title: 'Contact / Inquire',
     description:
-      "If you want to learn more, make an inquiry, or feature Metin's art please make contact.",
+      "If you want to learn more, make an inquiry, or feature Metin's art, please make contact.",
     icon: IconAddressBook,
     url: '/contact',
   },
