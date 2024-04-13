@@ -2,14 +2,14 @@
 
 import { useToggle, useIdle } from '@mantine/hooks';
 import { Overlay, Container, Title, Text, Box } from '@mantine/core';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 import classes from './WorkHeader.module.css';
 
 type Work = {
   name: string;
   title: string;
-  image: object;
+  image: StaticImageData;
   description: string;
 };
 
