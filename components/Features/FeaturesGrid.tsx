@@ -20,6 +20,7 @@ import {
 } from '@tabler/icons-react';
 import classes from './FeaturesGrid.module.css';
 import Link from 'next/link';
+import MetinHero from '../Misc/MetinHero';
 
 const data = [
   {
@@ -110,6 +111,8 @@ export function FeaturesGrid() {
       <Title order={2} className={classes.title} ta="center" mt="sm">
         Why is Metin's art important and valuable?
       </Title>
+
+      <MetinHero />
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">
         Metin believes divine inspiration plays a great part in the creation of his paintings. His

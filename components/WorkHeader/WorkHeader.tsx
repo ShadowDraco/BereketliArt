@@ -5,9 +5,9 @@ import { Overlay, Container, Title, Text, Box, Button } from '@mantine/core';
 //import ToggleOpacity from '@/components/Misc/ToggleOpacity';
 
 import Link from 'next/link';
-import classes from './HeroHeader.module.css';
+import classes from './WorkHeader.module.css';
 
-export function HeroHeader() {
+export function WorkHeader({ work }) {
   const idle = useIdle(6000);
   const [visible, toggle] = useToggle([true, false]);
   // const { ref, x, y } = useMouse();
@@ -18,6 +18,7 @@ export function HeroHeader() {
       onClick={() => {
         toggle();
       }}
+      style={{ backgroundImage: `url(${work.image.src})` }}
     >
       {/* <ToggleOpacity x={x} y={y}/> */}
       <Overlay
@@ -33,20 +34,13 @@ export function HeroHeader() {
             component="span"
             gradient={{ from: 'pink', to: 'orange' }}
           >
-            The Hollywood Painter
+            {work.title}
           </Text>
         </Title>
         <Text className={classes.description} size="xl" mt="xl">
-          Metin is an artist who has dedicated himself to the evolution of mankind with his themes.
-          His paintings are not only a display of vivid colors and powerful imagery, but also a
-          celebration of oneness with the Human Family in the Circle of Life.
+          {work.description}
         </Text>
       </Container>
-      <Link href={'/works/burlesque-parody'}>
-        <Button variant="outline" color="white" m="lg">
-          Burlesque Parody
-        </Button>
-      </Link>
     </Box>
   );
 }
