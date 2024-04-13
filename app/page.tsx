@@ -17,7 +17,6 @@ export default function HomePage() {
 
       <Space h="xl" />
       <FeaturesGrid />
-      <MainFooter />
     </>
   );
 }
