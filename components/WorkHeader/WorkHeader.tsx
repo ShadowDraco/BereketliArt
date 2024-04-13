@@ -26,7 +26,7 @@ export function WorkHeader(props: Props) {
 
   return (
     <Box
-      className={`${classes.hero}`}
+      className={`${classes.hero} click-me`}
       onClick={() => {
         toggle();
       }}
