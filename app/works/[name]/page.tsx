@@ -5,6 +5,8 @@ import React from 'react';
 import { Button } from '@mantine/core';
 import Link from 'next/link';
 import quantumHollywood1 from '../../../public/works/quantum-hollywood-1.jpg';
+import quantumHollywood2 from '../../../public/works/quantum-hollywood-2.jpg';
+import burlesqueParody from '../../../public/works/burlesque-parody.jpg';
 import { WorkHeader } from '@/components/WorkHeader/WorkHeader';
 
 const works = [
@@ -12,6 +14,20 @@ const works = [
     name: 'quantum-hollywood-1',
     title: 'Quantum Hollywood 1',
     image: quantumHollywood1,
+    description:
+      'Very large, 6 foot by 8 feet, Original Acrylic Painting. A most prized original painting, created for the Los Angeles Fashion Week of 2023.',
+  },
+  {
+    name: 'quantum-hollywood-2',
+    title: 'Quantum Hollywood 2',
+    image: quantumHollywood2,
+    description:
+      'Very large, 6 foot by 8 feet, Original Acrylic Painting. A most prized original painting, created for the Los Angeles Fashion Week of 2023.',
+  },
+  {
+    name: 'burlesque-parody',
+    title: 'Burlesque Parody',
+    image: burlesqueParody,
     description:
       'Very large, 6 foot by 8 feet, Original Acrylic Painting. A most prized original painting, created for the Los Angeles Fashion Week of 2023.',
   },
