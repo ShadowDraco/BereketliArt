@@ -1,12 +1,13 @@
 'use client';
 
-import { Menu, Group, Center, Burger, Container, Flex, ActionIcon } from '@mantine/core';
+import { Menu, Group, Center, Burger, Container, Flex } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
-import { IconHome } from '@tabler/icons-react';
+
 import Link from 'next/link';
-import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
+import { ColorSchemeToggle } from '../Buttons/ColorSchemeToggle';
 import classes from './MainHeader.module.css';
+import HomeButton from '../Buttons/HomeButton';
 
 const links = [
   { link: '/works', label: 'Works' },
@@ -79,11 +80,7 @@ export function MainHeader() {
       <Container size="md">
         <div className={classes.inner}>
           <Flex gap={'lg'} justify={'center'} align="center">
-            <ActionIcon variant="subtle" size="input-sm">
-              <Link href="/" style={{ textDecoration: 'none', color: 'black' }}>
-                <IconHome size={28} />
-              </Link>
-            </ActionIcon>
+            <HomeButton />
             <ColorSchemeToggle />
           </Flex>
           <Group gap={'md'} visibleFrom="sm">
