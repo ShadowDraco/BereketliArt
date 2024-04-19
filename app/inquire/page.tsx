@@ -1,10 +1,11 @@
-import { UnderConstruction } from '@/components/UnderConstruction/UnderConstruction';
 import React from 'react';
+
+import { Inquire } from '@/components/Inquire/Inquire';
 
 export default function page() {
   return (
-    <div className="magicpattern">
-      <UnderConstruction />
+    <div>
+      <Inquire />
     </div>
   );
 }

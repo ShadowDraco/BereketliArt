@@ -30,34 +30,28 @@ function Card({ image, title, category, background, url }: CardProps) {
       }}
       className={`${classes.card}`}
       onClick={() => {
-        toggle();
+        idle ? toggle(true) : toggle();
       }}
     >
       <div style={{ opacity: idle || !visible ? 0 : 1 }}>
         <Title
+          p={3}
           order={3}
           className={classes.title}
           style={{
             backgroundColor: background ? 'rgba(0,0,0,0.7)' : 'transparent',
-
-            padding: 12,
-            paddingLeft: 20,
-            paddingRight: 20,
-            borderRadius: '50%',
           }}
         >
           {title}
         </Title>
         <Text
           color="white"
+          p={3}
           style={{
             width: 'fit-content',
             backgroundColor: background ? 'rgba(0,0,0,0.7)' : 'transparent',
 
-            padding: 12,
-            paddingLeft: 20,
-            paddingRight: 20,
-            borderRadius: '50%',
+            borderRadius: '5px',
           }}
         >
           {category}
@@ -74,6 +68,13 @@ function Card({ image, title, category, background, url }: CardProps) {
 
 const data = [
   {
+    image: Quantum1.src,
+    title: 'Quantum Hollywood 1',
+    url: '/works/quantum-hollywood-1',
+    category: 'AVAILABLE',
+    background: true,
+  },
+  {
     image: Quantum2.src,
     title: 'Quantum Hollywood 2',
     url: '/works/quantum-hollywood-2',
@@ -85,13 +86,6 @@ const data = [
     title: 'Burlesque Parody',
     url: '/works/burlesque-parody',
     category: 'AVAILABLE',
-    background: true,
-  },
-  {
-    image: Quantum1.src,
-    title: 'Quantum Hollywood 1',
-    url: '/works/quantum-hollywood-1',
-    category: 'SOLD',
     background: true,
   },
 ];

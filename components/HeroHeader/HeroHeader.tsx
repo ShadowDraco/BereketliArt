@@ -16,7 +16,7 @@ export function HeroHeader() {
     <Box
       className={`${classes.hero} click-me`}
       onClick={() => {
-        toggle();
+        idle ? toggle(true) : toggle();
       }}
     >
       {/* <ToggleOpacity x={x} y={y}/> */}
@@ -42,7 +42,7 @@ export function HeroHeader() {
           celebration of oneness with the Human Family in the Circle of Life.
         </Text>
       </Container>
-      <Link href={'/works/burlesque-parody'}>
+      <Link href="/works/burlesque-parody">
         <Button variant="outline" color="white" m="lg">
           Burlesque Parody
         </Button>
