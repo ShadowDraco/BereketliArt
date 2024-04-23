@@ -10,6 +10,7 @@ export function ColorSchemeToggle() {
       onClick={() => setColorScheme(colorScheme !== 'dark' ? 'dark' : 'light')}
       variant="subtle"
       size="input-sm"
+      style={{ display: 'none' }}
     >
       {colorScheme === 'dark' ? (
         <IconSun size={28} color="white" />

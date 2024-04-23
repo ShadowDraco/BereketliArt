@@ -37,9 +37,11 @@ export function HeroHeader() {
           </Text>
         </Title>
         <Text className={classes.description} size="xl" mt="xl">
-          Metin is an artist who has dedicated himself to the evolution of mankind with his themes.
-          His paintings are not only a display of vivid colors and powerful imagery, but also a
-          celebration of oneness with the Human Family in the Circle of Life.
+          Metin is an artist of explosive colors, joyous forms, and a social conscience grounded in
+          the universal values of diversity, tolerance, and individual freedoms. He is a creator who
+          has transcended his time by focusing on global themes like courage, freedom, and love. You
+          can witness his dedication to such core values in every canvass that his brush has
+          touched.
         </Text>
       </Container>
       <Link href="/works/burlesque-parody">

@@ -14,10 +14,10 @@ const links = [
   { link: '/about', label: 'About' },
   {
     link: '#1',
-    label: 'Features',
+    label: 'Spotlight',
     links: [
       { link: '/press', label: 'Press' },
-      { link: '/features', label: 'Features' },
+      { link: '/features', label: 'Expositions' },
       { link: '/charity', label: 'Charity' },
       { link: '/store', label: 'Store' },
       { link: '/more', label: 'More!' },
@@ -25,7 +25,7 @@ const links = [
   },
   {
     link: '#2',
-    label: 'Contact',
+    label: 'Contact Us',
     links: [
       { link: '/contact', label: 'Contact' },
       { link: '/inquire', label: 'Inquire' },
@@ -38,14 +38,19 @@ export function MainHeader() {
 
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
-      <Link href={item.link} key={link.label}>
+      <Link href={item.link} key={`${link.label}-menu-item`}>
         <Menu.Item key={item.link}>{item.label}</Menu.Item>
       </Link>
     ));
 
     if (menuItems) {
       return (
-        <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal>
+        <Menu
+          key={`${link.label}-menu-label`}
+          trigger="hover"
+          transitionProps={{ exitDuration: 0 }}
+          withinPortal
+        >
           <Menu.Target>
             <Link
               href={link.link}
@@ -65,7 +70,7 @@ export function MainHeader() {
 
     return (
       <Link
-        key={link.label}
+        key={`${link.label}-menu-link`}
         href={link.link}
         className={classes.link}
         onClick={(event) => (link.link[0] === '#' ? event.preventDefault() : '')}

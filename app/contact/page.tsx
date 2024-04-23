@@ -1,10 +1,11 @@
-import { UnderConstruction } from '@/components/UnderConstruction/UnderConstruction';
+import { MessageForm } from '@/components/Message/MessageForm';
+
 import React from 'react';
 
 export default function page() {
   return (
     <div className="magicpattern">
-      <UnderConstruction />
+      <MessageForm />
     </div>
   );
 }
