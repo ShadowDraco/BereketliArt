@@ -1,6 +1,13 @@
 import sendMessageEmail from '../../../../../mailgun/sendMessageEmail';
-export async function POST(req, params) {
-  const inquiry = { ...params.params };
+
+type MessageParams = {
+  email: 'string';
+  name: 'string';
+  message: 'string';
+};
+
+export async function POST(req: Request, route: { params: MessageParams }) {
+  const inquiry = { ...route.params };
 
   try {
     await sendMessageEmail(inquiry);
