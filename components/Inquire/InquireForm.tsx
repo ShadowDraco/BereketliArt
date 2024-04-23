@@ -19,7 +19,7 @@ export function InquireForm() {
     const select = selectRef.current?.value;
     const text = messageRef.current?.value;
 
-    const response = await fetch(`/api/inquire/${email}/${select}/${name}/${message}`, {
+    const response = await fetch(`/api/inquire/${email}/${select}/${name}/${text}`, {
       method: 'POST',
     });
     const res = await response.json();
