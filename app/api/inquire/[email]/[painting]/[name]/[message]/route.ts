@@ -1,4 +1,5 @@
 import sendInquiryEmail from '../../../../../../mailgun/sendInquiryEmail';
+
 type InquiryParams = {
   email: 'string';
   painting: 'string';
