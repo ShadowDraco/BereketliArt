@@ -3,9 +3,10 @@
 import { useRef, useState } from 'react';
 import { Text, Title, SimpleGrid, TextInput, Textarea, Button, Group } from '@mantine/core';
 import { ContactIconsList } from '../Inquire/InquireIcons';
+
 import classes from '../Inquire/Inquire.module.css';
 
-export function MessageForm() {
+export function MessageForm({ submit }) {
   const emailRef = useRef<HTMLInputElement>(null);
 
   const nameRef = useRef<HTMLInputElement>(null);
@@ -15,13 +16,13 @@ export function MessageForm() {
   const [message, setMessage] = useState('');
   const [enabled, setEnabled] = useState(true);
 
-  const submit = async () => {
+  const secureSubmit = async () => {
     const email = emailRef.current?.value;
     const name = nameRef.current?.value;
     const text = messageRef.current?.value;
 
-    const response = await fetch(`/api/message/${email}/${name}/${text}`, { method: 'POST' });
-    const res = await response.json();
+    const res = await submit(email, name, text);
+
     setSuccess(res.success);
     setMessage(res.statusText);
     setEnabled(false);
@@ -73,7 +74,7 @@ export function MessageForm() {
               className={classes.control}
               disabled={!enabled}
               onClick={() => {
-                submit();
+                secureSubmit();
               }}
             >
               Send message
