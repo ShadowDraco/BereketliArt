@@ -2,7 +2,7 @@
 
 import { Image, Container, Title, Text, Button, SimpleGrid } from '@mantine/core';
 import Link from 'next/link';
-import image from './HollyWoodPainter.webp';
+import image from '@/public/Hero/HollyWoodPainterFull.webp';
 import classes from './NotFoundImage.module.css';
 
 export function NotFoundImage() {
@@ -14,7 +14,7 @@ export function NotFoundImage() {
           <Title className={classes.title}>Something is not right...</Title>
           <Text c="dimmed" size="lg">
             Page you are trying to open does not exist. You may have mistyped the address, or the
-            page has been moved to another URL. If you think this is an error contact support.
+            page has been moved to another URL. If you think this is an error contact us.
           </Text>
           <Link href="/">
             <Button variant="outline" size="md" mt="xl" className={classes.control}>

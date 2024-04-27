@@ -3,12 +3,10 @@
 import { useRef, useState } from 'react';
 import { Text, Title, SimpleGrid, TextInput, Textarea, Button, Group } from '@mantine/core';
 import { ContactIconsList } from '../Inquire/InquireIcons';
-
 import classes from '../Inquire/Inquire.module.css';
 
-export function MessageForm(submit: any) {
+export function MessageForm(props: any) {
   const emailRef = useRef<HTMLInputElement>(null);
-
   const nameRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
 
@@ -21,7 +19,7 @@ export function MessageForm(submit: any) {
     const name = nameRef.current?.value;
     const text = messageRef.current?.value;
 
-    const res = await submit(email, name, text);
+    const res = await props.submit(email, name, text);
 
     setSuccess(res.success);
     setMessage(res.statusText);

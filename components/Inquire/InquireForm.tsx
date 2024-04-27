@@ -5,7 +5,7 @@ import { Text, Title, SimpleGrid, TextInput, Textarea, Button, Group, Select } f
 import { ContactIconsList } from './InquireIcons';
 import classes from './Inquire.module.css';
 
-export function InquireForm() {
+export function InquireForm(props: any) {
   const emailRef = useRef<HTMLInputElement>(null);
   const selectRef = useRef<HTMLInputElement>(null);
   const nameRef = useRef<HTMLInputElement>(null);
@@ -15,16 +15,13 @@ export function InquireForm() {
   const [message, setMessage] = useState('');
   const [enabled, setEnabled] = useState(true);
 
-  const submit = async () => {
+  const secureSubmit = async () => {
     const email = emailRef.current?.value;
-    const name = nameRef.current?.value;
     const select = selectRef.current?.value;
+    const name = nameRef.current?.value;
     const text = messageRef.current?.value;
 
-    const response = await fetch(`/api/inquire/${email}/${select}/${name}/${text}`, {
-      method: 'POST',
-    });
-    const res = await response.json();
+    const res = await props.submit(email, select, name, text);
 
     setSuccess(res.success);
     setMessage(res.statusText);
@@ -55,7 +52,7 @@ export function InquireForm() {
             required
             label="Which Piece?"
             placeholder="Hollywood 1"
-            data={['Hollywood 1', 'Hollywood 2', 'BurlesqueParody', 'Other']}
+            data={['Hollywood 1', 'Hollywood 2', 'BurlesqueParody', 'Carnival Curtain', 'Other']}
             mt="md"
           />
           <TextInput
@@ -84,7 +81,7 @@ export function InquireForm() {
               className={classes.control}
               disabled={!enabled}
               onClick={() => {
-                submit();
+                secureSubmit();
               }}
             >
               Send message

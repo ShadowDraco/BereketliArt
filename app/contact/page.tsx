@@ -14,7 +14,7 @@ export default async function page() {
   };
 
   return (
-    <div>
+    <div className="FadeMeIn">
       <MessageForm submit={submit} />
     </div>
   );
