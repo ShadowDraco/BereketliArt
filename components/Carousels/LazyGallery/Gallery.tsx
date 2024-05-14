@@ -7,8 +7,8 @@ export default function Gallery(props: any) {
   return (
     <Box className="flexbox">
       {props.images.map((item: any, index: number) => (
-        <Tooltip label={item.caption}>
-          <Link href={`/works/${item.url}`}>
+        <Tooltip label={item.caption} key={item.caption}>
+          {item.noLink ? (
             <Image
               className="LazyImage"
               src={item.src}
@@ -25,7 +25,26 @@ export default function Gallery(props: any) {
                 objectFit: 'cover',
               }}
             />
-          </Link>
+          ) : (
+            <Link href={`/works/${item.url}`}>
+              <Image
+                className="LazyImage"
+                src={item.src}
+                key={index}
+                width={item.width}
+                height={item.height}
+                alt={item.alt}
+                style={{
+                  borderRadius: 10,
+                  display: 'block',
+                  width: '100%',
+                  height: '100%',
+                  minHeight: '400px',
+                  objectFit: 'cover',
+                }}
+              />
+            </Link>
+          )}
         </Tooltip>
       ))}
     </Box>

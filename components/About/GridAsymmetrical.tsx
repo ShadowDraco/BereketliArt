@@ -1,7 +1,7 @@
 import { Text, Box, Container, Space } from '@mantine/core';
-import { Gallery } from 'react-grid-gallery';
-import Link from 'next/link';
 import Image from 'next/image';
+import Gallery from '@/components/Carousels/LazyGallery/Gallery';
+
 import HollyWoodPainter from '@/public/Hero/HollyWoodPainterFull.webp';
 import PaintingJFK from '@/public/Hero/PaintingJFK.jpg';
 import classes from './HeroTitle.module.css';
@@ -15,16 +15,8 @@ export function GridAsymmetrical() {
     height: work.image.height,
     caption: work.title,
     url: work.name,
+    noLink: true,
     alt: 'Artwork by Metin Bereketli',
-    thumbnailCaption: (
-      // <Link href={`/works/${work.name}`} style={{}}>
-      <Box style={{ margin: 'auto', backgroundColor: 'rgba(100,155,255, 0.2)' }}>
-        <Text fz="lg" style={{ color: 'black', textAlign: 'center' }}>
-          {work.title}
-        </Text>
-      </Box>
-      //</Link>
-    ),
   }));
 
   const charitiesGallery = charities.map((work) => ({
@@ -32,17 +24,9 @@ export function GridAsymmetrical() {
     width: work.image.width,
     height: work.image.height,
     caption: work.title,
-    url: work.name,
+    url: 'work.name',
+    noLink: true,
     alt: 'Artwork by Metin Bereketli',
-    thumbnailCaption: (
-      // <Link href={`/works/${work.name}`} style={{}}>
-      <Box style={{ margin: 'auto', backgroundColor: 'rgba(200,50,50, 0.5)' }}>
-        <Text fz="lg" style={{ color: 'black', textAlign: 'center' }}>
-          {work.title}
-        </Text>
-      </Box>
-      //</Link>
-    ),
   }));
 
   return (
@@ -65,7 +49,7 @@ export function GridAsymmetrical() {
 
         <Space h="md" />
 
-        <Gallery images={worldLeadersGallery} enableImageSelection={false} />
+        <Gallery images={worldLeadersGallery} />
 
         <Space h="xl" />
 
@@ -93,7 +77,7 @@ export function GridAsymmetrical() {
           Girls Clubs, museums, hospitals, organizations formed to fight cancer, police departments,
           etc
         </Text>
-        <Gallery images={charitiesGallery} enableImageSelection={false} />
+        <Gallery images={charitiesGallery} />
 
         <Space h="xl" />
       </Container>

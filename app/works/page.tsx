@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-import { Box, Text } from '@mantine/core';
-import Link from 'next/link';
+import { Box } from '@mantine/core';
+
 import Gallery from '@/components/Carousels/LazyGallery/Gallery';
 
 import { works } from '../../public/works';
@@ -17,15 +17,6 @@ export default function page() {
     caption: work.title,
     url: work.name,
     alt: 'Artwork by Metin Bereketli',
-    thumbnailCaption: (
-      <Link href={`/works/${work.name}`} style={{}}>
-        <Box style={{ margin: 'auto', backgroundColor: 'rgba(100,255,255, 0.2)' }}>
-          <Text fz="lg" style={{ color: 'black', textAlign: 'center' }}>
-            {work.title}
-          </Text>
-        </Box>
-      </Link>
-    ),
   }));
 
   return (
