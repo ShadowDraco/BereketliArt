@@ -1,35 +1,15 @@
 import { Container, Text, Button, Group } from '@mantine/core';
 import Link from 'next/link';
 import classes from './HeroTitle.module.css';
-import HoverToggle from '../Misc/HoverToggle';
 
 export function HeroTitle() {
   return (
     <div className={classes.wrapper}>
       <Container size={700} className={classes.inner}>
         <h1 className={classes.title}>
-          <HoverToggle
-            child1={
-              <Text
-                component="span"
-                variant="gradient"
-                gradient={{ from: 'blue', to: 'cyan' }}
-                inherit
-              >
-                World Reknown
-              </Text>
-            }
-            child2={
-              <Text
-                component="span"
-                variant="gradient"
-                gradient={{ from: 'blue', to: 'cyan' }}
-                inherit
-              >
-                Healing Painter
-              </Text>
-            }
-          />{' '}
+          <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
+            Healing Painter
+          </Text>
           <Text
             component="span"
             variant="gradient"

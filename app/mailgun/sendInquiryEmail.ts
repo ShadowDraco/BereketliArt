@@ -12,7 +12,7 @@ export default async function sendInquiryEmail(inquiry: InquiryParams) {
   const messageData = {
     from: `Bereketli Art INQUIRY <Messianic@WebServices>`,
     //to: 'hollywoodpainter@gmail.com',
-    to: 'stormethan10@gmail.com',
+    to: 'mdamwebservices.hydrogen437@passinbox.com',
     subject: 'Artwork Inquiry',
     html: `<html>
   <head>
