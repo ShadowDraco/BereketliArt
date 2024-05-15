@@ -1,5 +1,5 @@
-import React from 'react'
+import React from 'react';
 
 export default function loading() {
-  return <div className='lds-dual-ring center-page'></div>
+  return <div className="center-page lds-dual-ring "></div>;
 }

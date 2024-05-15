@@ -18,8 +18,8 @@ import {
   IconNews,
   IconAddressBook,
 } from '@tabler/icons-react';
-import classes from './FeaturesGrid.module.css';
 import Link from 'next/link';
+import classes from './FeaturesGrid.module.css';
 import MetinHero from '../Misc/MetinHero';
 
 const data = [

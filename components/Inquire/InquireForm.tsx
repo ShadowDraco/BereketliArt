@@ -32,9 +32,9 @@ export function InquireForm(props: any) {
     <div className={classes.wrapper}>
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
         <div>
-          <Title className={classes.title}>Contact us</Title>
+          <Title className={classes.title}>Inquire</Title>
           <Text className={classes.description} mt="sm" mb={30}>
-            Let us know what you are looking for! We will be in touch promptly!
+            Securely message MDAM Art for inquiries. We will be in touch promptly!
           </Text>
 
           <ContactIconsList />
