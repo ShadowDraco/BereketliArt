@@ -18,9 +18,9 @@ const links = [
     links: [
       { link: '/press', label: 'Press' },
       { link: '/features', label: 'Expositions' },
-      { link: '/charity', label: 'Charity' },
-      { link: '/store', label: 'Store' },
-      { link: '/more', label: 'More!' },
+      //{ link: '/charity', label: 'Charity' },
+      //{ link: '/store', label: 'Store' },
+      //{ link: '/more', label: 'More!' },
     ],
   },
   {

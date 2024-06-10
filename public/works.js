@@ -3,8 +3,9 @@ import ana from './works/ana.jpg';
 import burlesque from './works/burlesque-parody.jpg';
 import carnival from './works/carnival-curtain.jpg';
 import dancers from './works/dancers.jpg';
-//import diversity2 from './works/diversity-2.jpg';
+import diversity2 from './works/diversity-2.jpg';
 import diversity5 from './works/diversity-5.jpg';
+import windows2 from './works/windows-2.jpg'
 //import golden from './works/golden-eagles.jpg';
 //import intricacy from './works/intricacy.jpg';
 //import lunch from './works/lunch-time-melody.jpg';
@@ -56,6 +57,13 @@ export const works = [
     name: 'burlesque-parody',
     description:
       '22 by 28 inch, Original Oil Painting. This art, composed on museum quality hard paper, is elegant and complimentary to any environment.',
+  },
+  {
+    image: windows2,
+    title: 'Windows 2',
+    name: 'windows-2',
+    description:
+      '4 x 4 foot (framed) acrylic painting. Windows 2 is a large and beautiful masterpiece.',
   },
   {
     image: carnival,
@@ -152,3 +160,18 @@ export const cities = [
     description: 'Original Saskatoon painting by Metin Bereketli, 28"x 22" Acrylic on Canvas',
   },
 ];
+
+export const diversity = [
+  {
+    image: diversity2,
+    title: 'Diversity 2',
+    name: 'diversity-2',
+    description: "Original painting of Metin\'s \"Diversity\" collection" 
+  },
+  {
+    image: diversity5,
+    title: 'Diversity 5',
+    name: 'diversity-5',
+    description: "Original painting of Metin\'s \"Diversity\" collection" 
+  },
+]

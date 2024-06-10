@@ -7,7 +7,7 @@ import PaintingJFK from '@/public/Hero/PaintingJFK.jpg';
 import Peacelandia from '@/public/Hero/PEACELANDIA.jpg';
 
 import classes from './HeroTitle.module.css';
-import { worldLeaders, charities, pressWorks, cities } from '@/public/works';
+import { worldLeaders, charities, pressWorks, cities, diversity } from '@/public/works';
 import { UnderConstruction } from '../UnderConstruction/UnderConstruction';
 import LazyImage from '../Carousels/LazyGallery/LazyImage';
 
@@ -50,6 +50,17 @@ export function GridAsymmetrical() {
     url: work.name,
     noLink: true,
     alt: 'Original "Cities" series by Metin Bereketli!',
+  }));
+
+
+  const diversityGallery = diversity.map((work) => ({
+    src: work.image.src,
+    width: work.image.width,
+    height: work.image.height,
+    caption: work.title,
+    url: work.name,
+    noLink: true,
+    alt: 'Metin Bereketli\'s Diversity collection',
   }));
 
   const PaintingJFKImage = {
@@ -114,6 +125,7 @@ export function GridAsymmetrical() {
           Girls Clubs, museums, hospitals, organizations formed to fight cancer, police departments,
           etc
         </Text>
+        <Space h="xl" />
         <Gallery images={charitiesGallery} />
         <Space h="xl" />
         <Group grow preventGrowOverflow={false} visibleFrom="sm" wrap="nowrap">
@@ -166,8 +178,98 @@ export function GridAsymmetrical() {
           <LazyImage {...PeacelandiaImage} />
         </Group>
         <Space h="xl" />
+        
+        <Group grow preventGrowOverflow={false} visibleFrom="sm" wrap="wrap">
+          <Text className={classes.description} style={{  }}>
+          One cannot emphasize enough Metin’s special focus on diversity. 
+          His fervent wish is to bring together all peoples from all kinds of religious, ethnic and 
+          cultural backgrounds. That’s his definition of Heaven On Earth and it’s easy to see that 
+          dedication in over a dozen original works he has created in the past. 
+
+          </Text>
+          <Gallery images={diversityGallery} />
+        </Group>
+        <Group grow preventGrowOverflow={false} hiddenFrom="sm" wrap="wrap">
+          <Text className={classes.description}>
+          One cannot emphasize enough Metin’s special focus on diversity. 
+          His fervent wish is to bring together all peoples from all kinds of religious, ethnic and 
+          cultural backgrounds. That’s his definition of Heaven On Earth and it’s easy to see that 
+          dedication in over a dozen original works he has created in the past. 
+          </Text>
+          <Gallery images={diversityGallery} />
+        </Group>
+        <Space h="xl" />
+        <Text className={classes.description} style={{ fontWeight: 'bold'}}>
+        Metin's artwork have appeared in the following MOVIES and TV shows: 
+          </Text>
+          <Text className={classes.description} style={{ fontWeight: 'lighter', fontSize: '15px'}}>
+          • IT'S ALWAYS SUNNY IN PHILADELPHIA 
+          • CHIP 'N' DALE:RESCUE RANGERS 
+          • UNITED STATES OF AL 
+          • THE NEIGHBORHOOD 
+          • SYDNEY TO THE MAX 
+          • THE KOMINSKY METHOD 
+          • GREY'S ANATOMY 
+          • SNEAKY PETE 
+          • THE OPENING ACT  
+          • LUCIFER 
+          • CODE BLACK 
+          • SHUT EYE 
+          • TRANSPARENT 
+          • A TO Z 
+          • HARRY’S LAW 
+          • HOMELAND 
+          • ARMY WIVES 
+          • SOUTH OF HELL 
+          • ROYAL PAINS 
+          • CSI: NY 
+          • HOW I MET YOUR MOTHER 
+          • NUMBERS 
+          • ER 
+          • HOUSE 
+          • FRIENDS 
+          • FRASIER 
+          • THE ASSISTANTS 
+          • THE DEFENDERS 
+          • THE APPRENTICE 
+          • GILMORE GIRLS 
+          • PRIVILEGED 
+          • WILL AND GRACE
+          • BECKER 
+          • TWO AND A HALF MEN 
+          • DREW CAREY SHOW 
+          • SEVENTH HEAVEN 
+          • CHICAGO HOPE 
+          • PASSIONS 
+          • THE BOLD AND THE BEAUTIFUL 
+          • GENERAL HOSPITAL 
+          • PORT CHARLES 
+          • ALL OF US  NOAH'S ARK  
+          • SUNSET BEACH  THE PRETENDER 
+          • JESSE  PARTY OF FIVE  
+          • ANGEL 
+          • FELICITY 
+          • WASTELAND
+          • VERONICA'S CLOSET 
+          • SHASTA MCNASTY 
+          • MEN WHO STARE AT GOATS 
+          • POSEIDON 
+          • LANDSLIDE 
+          • KILLER FLOOD THE LITTLE DEATH
+          • THE HEART OF CHRISTMAS 
+          • KATIE COURIC & MATT LAUER “TODAY” SHOW  
+          • AND MANY MORE…
+          </Text>
+          <Space h="xl" />
+          <Text className={classes.description}>
+          Metin was recently honored by the Academy of Television Arts and Sciences for his contribution to the Emmy Award winning achievement of the TV show “Transparent” and "How I Met Your Mother"
+          </Text>
       </Container>
-      <UnderConstruction />
+      
     </>
+
+
+
+
   );
 }
