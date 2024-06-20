@@ -6,6 +6,7 @@ import dancers from './works/dancers.jpg';
 import diversity2 from './works/diversity-2.jpg';
 import diversity5 from './works/diversity-5.jpg';
 import windows2 from './works/windows-2.jpg'
+import newyorksdna from './works/new-yorks-dna.jpg'
 //import golden from './works/golden-eagles.jpg';
 //import intricacy from './works/intricacy.jpg';
 //import lunch from './works/lunch-time-melody.jpg';
@@ -35,6 +36,20 @@ import amorEnAccion from './press/EspirituCatolico.jpg';
 import cincinnati from './cities/Cincinnati.jpg';
 import lasVegas from './cities/LasVegas.jpg';
 import saskatoon from './cities/SaskatoonCanada.jpg';
+
+//? Expositions
+
+import rock from './expositions/rock.jpg'
+import sean from './expositions/sean.jpg'
+import stalone from './expositions/stalone.jpg'
+import keanu from './expositions/keanu.jpg'
+import EXreagan from './expositions/reagan.jpg'
+import EXjfk from './expositions/jfk.jpg'
+import EXlincoln from './expositions/lincoln.jpg'
+import petrus from './expositions/petrus.jpg'
+
+
+
 
 export const works = [
   {
@@ -70,6 +85,12 @@ export const works = [
     title: 'Carnival Curtain',
     name: 'carnival-curtain',
     description: '4 by 4 foot, Original Acrylic Painting. A colorful and engaging masterpiece.',
+  },
+  {
+    image: newyorksdna,
+    title: 'New York\'s DNA',
+    name: 'new-yorks-dna',
+    description: '36 by 24 inc Acrylic painting boasting vibrant and beautiful colors.'
   },
   { image: petras, title: 'Petrus Maximus', name: 'petras-maximus', description: '' },
   //{ image: lunch, title: 'Lunch Time Melody', name: 'lunch-time-melody', description: '' },
@@ -174,4 +195,56 @@ export const diversity = [
     name: 'diversity-5',
     description: "Original painting of Metin\'s \"Diversity\" collection" 
   },
+]
+
+export const expositions = [
+  {
+    image: rock,
+    title: 'The Rock',
+    name: 'exposition-the-rock',
+    description: "Dwayne Johnson meeting Metin\'s artwork" 
+  },
+  {
+    image: petrus,
+    title: 'Petrus Maximus',
+    name: 'exposition-petrus-maximus',
+    description: "Metin\'s original artwork 'Petrus Maximus'" 
+  },
+  
+  {
+    image: EXjfk,
+    title: 'John F. Kennedy',
+    name: 'exposition-jfk',
+    description: "Metin\'s artwork John F. Kennedy" 
+  },
+  {
+    image: stalone,
+    title: 'Sylvestor Stalone',
+    name: 'exposition-sylvestor-stalone',
+    description: "Sylvestor Stalone and Metin\'s meeting" 
+  },
+  {
+    image: EXreagan,
+    title: 'Ronald Reagan',
+    name: 'exposition-ronald-reagan',
+    description: "Metin\'s artwork Ronald Reagan" 
+  },
+  {
+    image: sean,
+    title: 'Sean William Scott',
+    name: 'exposition-sean-william-scott',
+    description: "Sean William Scott enjoing Metin\'s artwork" 
+  },
+  {
+    image: keanu,
+    title: 'Keanu Reeves',
+    name: 'exposition-keanu-reeves',
+    description: "Keanu Reeves loves Metin\'s artwork" 
+  },
+  {
+    image: EXlincoln,
+    title: 'Lincoln',
+    name: 'exposition-abraham-lincoln',
+    description: 'Metin\'s artowork Abraham Lincoln'
+  }
 ]

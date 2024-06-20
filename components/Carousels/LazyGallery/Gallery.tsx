@@ -4,13 +4,15 @@ import Link from 'next/link';
 import React from 'react';
 
 export default function Gallery(props: any) {
+
   return (
     <Box className="flexbox">
       {props.images.map((item: any, index: number) => (
+        
         <Tooltip label={item.caption} key={item.caption}>
           {item.noLink ? (
             <Image
-              className="LazyImage"
+              className={`LazyImage ${item.zoom ? 'zoom' : ''}`}
               src={item.src}
               key={index}
               width={item.width}
@@ -28,7 +30,7 @@ export default function Gallery(props: any) {
           ) : (
             <Link href={`/works/${item.url}`}>
               <Image
-                className="LazyImage"
+                className={`LazyImage ${props.zoom ? 'zoom' : ''}`}
                 src={item.src}
                 key={index}
                 width={item.width}

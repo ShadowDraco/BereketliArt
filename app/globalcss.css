@@ -31,6 +31,11 @@
   transform: scale(1.08);
 }
 
+.LazyImage.zoom:hover {
+  z-index: 100;
+  transform: scale(1.25);
+}
+
 .darker {
   background-color: rgb(226, 226, 226);
   border: 10px rgb(37, 37, 37) ridge;
