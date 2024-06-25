@@ -23,7 +23,7 @@ export function HeroTitle() {
 
         <Text className={classes.description} color="dimmed">
           Metin&#39;s famous art precedes him. The art&#39;s attraction begs famous names
-          to admire it. Explore the various places and faces that Metin and his artwork
+          to admire it. Explore the various expositions Metin and his artwork
           have met and eternalized.
         </Text>
 
