@@ -1,13 +1,25 @@
 'use client';
 
 import { useToggle, useIdle } from '@mantine/hooks';
-import { Overlay, Container, Title, Text, Box, Button } from '@mantine/core';
-//import ToggleOpacity from '@/components/Misc/ToggleOpacity';
+import { Overlay, Container, Title, Text, Box } from '@mantine/core';
+import Image from 'next/image';
 
-import Link from 'next/link';
 import classes from './WorkHeader.module.css';
 
-export function WorkHeader({ work }) {
+type Work = {
+  name: string;
+  title: string;
+  image: object;
+  description: string;
+};
+
+interface Props {
+  work: Work;
+}
+
+export function WorkHeader(props: Props) {
+  const { work } = props;
+
   const idle = useIdle(6000);
   const [visible, toggle] = useToggle([true, false]);
   // const { ref, x, y } = useMouse();
@@ -18,7 +30,7 @@ export function WorkHeader({ work }) {
       onClick={() => {
         toggle();
       }}
-      style={{ backgroundImage: `url(${work.image.src})` }}
+      style={{ marginTop: 10, backgroundImage: `url(${work.image.src})` }}
     >
       {/* <ToggleOpacity x={x} y={y}/> */}
       <Overlay
