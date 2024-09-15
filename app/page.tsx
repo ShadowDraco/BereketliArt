@@ -14,7 +14,6 @@ export default function HomePage() {
       <HeroHeader />
      
       <FeaturedArt />
-      <Space h={'xl'} />
 
       <CardsCarousel />
       <Space h={'xl'} />

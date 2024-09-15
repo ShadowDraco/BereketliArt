@@ -3,6 +3,7 @@
 import { Text, Container, ActionIcon, Group, rem } from '@mantine/core';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
 
+import Link from 'next/link';
 import classes from './Footer.module.css';
 
 const data = [
@@ -61,27 +62,38 @@ export function Footer() {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <div className={classes.logo}>
-          <Text size="xs" c="dimmed" className={classes.description}>
-            Build fully functional accessible web applications faster than ever
+          <Text size="md" className={classes.description}>
+            Metin Bereketli, the world renowned Hollywood Painter.
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>
       </Container>
       <Container className={classes.afterFooter}>
-        <Text c="dimmed" size="sm">
-          © 2020 mantine.dev. All rights reserved.
+        <Text size="sm">
+          All works are created by Metin Bereketli. Please inquire if you have interest in his
+          works.
+        </Text>
+        <Text size="sm">
+          Web Services by <Link href="https://github.com/shadowdraco">Ethan Storm</Link>
         </Text>
 
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandTwitter style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandYoutube style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-          </ActionIcon>
+          <Link href="https://twitter.com/healingpainter" target="_blank">
+            <ActionIcon size="lg" color="gray" variant="subtle">
+              <IconBrandTwitter style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+            </ActionIcon>
+          </Link>
+          <Link href="https://www.youtube.com/@metinbereketli7681" target="_blank">
+            {' '}
+            <ActionIcon size="lg" color="gray" variant="subtle">
+              <IconBrandYoutube style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+            </ActionIcon>
+          </Link>
+          <Link href="https://www.instagram.com/healingpainter" target="_blank">
+            <ActionIcon size="lg" color="gray" variant="subtle">
+              <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+            </ActionIcon>
+          </Link>
         </Group>
       </Container>
     </footer>

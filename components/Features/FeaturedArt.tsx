@@ -5,7 +5,7 @@ import classes from './FeaturedArt.module.css';
 export default function FeaturedArt() {
   return (
     <Box>
-      <Title className={classes.title} ta="center">
+      <Title className={`${classes.title} conic-border-active`} ta="center">
         <Text
           inherit
           variant="gradient"

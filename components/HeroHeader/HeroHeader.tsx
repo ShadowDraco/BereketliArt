@@ -1,9 +1,10 @@
 'use client';
-import { useToggle, useIdle, useMouse } from '@mantine/hooks';
-import { Overlay, Container, Title, Text, Box } from '@mantine/core';
+import { useToggle, useIdle } from '@mantine/hooks';
+import { Overlay, Container, Title, Text, Box, Button } from '@mantine/core';
 //import ToggleOpacity from '@/components/Misc/ToggleOpacity';
 
 import classes from './HeroHeader.module.css';
+import Link from 'next/link';
 
 export function HeroHeader() {
   const idle = useIdle(6000);
@@ -12,7 +13,7 @@ export function HeroHeader() {
 
   return (
     <Box
-      className={`${classes.hero} conic-border`}
+      className={`${classes.hero}`}
       onClick={() => {
         toggle();
       }}
@@ -31,7 +32,7 @@ export function HeroHeader() {
             component="span"
             gradient={{ from: 'pink', to: 'orange' }}
           >
-           The Hollywood Painter
+            The Hollywood Painter
           </Text>
         </Title>
         <Text className={classes.description} size="xl" mt="xl">
@@ -40,6 +41,11 @@ export function HeroHeader() {
           celebration of oneness with the Human Family in the Circle of Life.
         </Text>
       </Container>
+      <Link href={'/work/burlesque-parody'}>
+        <Button variant="outline" color="white" m="lg">
+          Burlesque Parody
+        </Button>
+      </Link>
     </Box>
   );
 }
