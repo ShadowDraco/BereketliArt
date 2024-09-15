@@ -3,11 +3,11 @@ import ana from './works/ana.jpg';
 import burlesque from './works/burlesque-parody.jpg';
 import carnival from './works/carnival-curtain.jpg';
 import dancers from './works/dancers.jpg';
-import diversity2 from './works/diversity-2.jpg';
+//import diversity2 from './works/diversity-2.jpg';
 import diversity5 from './works/diversity-5.jpg';
-import golden from './works/golden-eagles.jpg';
-import intricacy from './works/intricacy.jpg';
-import lunch from './works/lunch-time-melody.jpg';
+//import golden from './works/golden-eagles.jpg';
+//import intricacy from './works/intricacy.jpg';
+//import lunch from './works/lunch-time-melody.jpg';
 import petras from './works/petras-maximus.jpg';
 import quantum1 from './works/quantum-hollywood-1.jpg';
 import quantum2 from './works/quantum-hollywood-2.jpg';
@@ -54,13 +54,13 @@ export const works = [
     description: '4 by 4 foot, Original Acrylic Painting. A colorful and engaging masterpiece.',
   },
   { image: petras, title: 'Petrus Maximus', name: 'petras-maximus', description: '' },
-  { image: lunch, title: 'Lunch Time Melody', name: 'lunch-time-melody', description: '' },
-  { image: diversity2, title: 'Diversity 2', name: 'diversity-2', description: '' },
+  //{ image: lunch, title: 'Lunch Time Melody', name: 'lunch-time-melody', description: '' },
+  //{ image: diversity2, title: 'Diversity 2', name: 'diversity-2', description: '' },
   { image: diversity5, title: 'Diversity 5', name: 'diversity-5', description: '' },
-  { image: golden, title: 'Golden Eagles', name: 'golden-eagles', description: '' },
-  { image: intricacy, title: 'Intricacy', name: 'intricacy', description: '' },
+ // { image: golden, title: 'Golden Eagles', name: 'golden-eagles', description: '' },
+  //{ image: intricacy, title: 'Intricacy', name: 'intricacy', description: '' },
   { image: dancers, title: 'Dancers', name: 'dancers', description: '' },
-  { image: ana, title: 'Ana', name: 'ana', description: '' },
+ // { image: ana, title: 'Ana', name: 'ana', description: '' },
 ];
 
 export const worldLeaders = [

@@ -12,7 +12,7 @@ export default async function sendMessageEmail(message: MessageParams) {
   const messageData = {
     from: `Bereketli Art MESSAGE <Messianic@WebServices>`,
     //to: 'hollywoodpainter@gmail.com',
-    to: 'stormethan10@gmail.com',
+    to: 'mdamwebservices.hydrogen437@passinbox.com',
     subject: 'General Message',
     html: `<html>
   <head>

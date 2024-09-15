@@ -8,7 +8,7 @@ export function FavoriteWorks() {
         Metin's
         <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
           {' '}
-          Favorite{' '}
+          Featured{' '}
         </Text>
         Works
       </Title>

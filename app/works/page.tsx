@@ -1,10 +1,10 @@
 'use client';
 
 import React from 'react';
-import { Gallery } from 'react-grid-gallery';
 
 import { Box, Text } from '@mantine/core';
 import Link from 'next/link';
+import Gallery from '@/components/Carousels/LazyGallery/Gallery';
 
 import { works } from '../../public/works';
 import { FavoriteWorks } from '@/components/TextHeaders/FavoriteWorks';
@@ -32,7 +32,7 @@ export default function page() {
     <Box className="FadeMeIn darker">
       <FavoriteWorks />
       <Box pb="xl" style={{ width: '90%', margin: 'auto' }}>
-        <Gallery images={galleryWorks} enableImageSelection={false} margin={6} />
+        <Gallery images={galleryWorks} />
       </Box>
     </Box>
   );
