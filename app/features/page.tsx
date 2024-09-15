@@ -3,7 +3,7 @@ import { Box} from '@mantine/core';
 
 import { expositions } from '@/public/works'
 import Gallery from '@/components/Carousels/LazyGallery/Gallery';
-import { HeroTitle } from '@/components/Features/HeroTitle';
+import { HeroTitle } from '@/components/Features/EXHeroTitle';
 
 export default function page() {
   const expositionsGallery = expositions.map((work) => ({

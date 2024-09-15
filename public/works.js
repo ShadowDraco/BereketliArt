@@ -50,6 +50,13 @@ import petrus from './expositions/petrus.jpg'
 import autism from './expositions/autism.jpg'
 import autismHonor from './expositions/autismHonor.jpg'
 import tribuna from './expositions/tribuna.jpg'
+import autismAmerica from './expositions/autism-america.jpg'
+import friendsNYPost from './expositions/friends-ny-post.jpg'
+import friendsTimes from './expositions/friends-times.jpg'
+import EXFriends from './expositions/friends.jpg'
+import gardenOfPage from './expositions/gardens-of-page.jpg'
+import primitiveEMMY from './expositions/primitive-emmy.jpg'
+
 
 
 export const works = [
@@ -198,6 +205,45 @@ export const diversity = [
   },
 ]
 
+export const press = [
+  {
+    image: autismHonor,
+    title: 'ASA\'s evening of Champions',
+    name: 'exposition-autism-honor',
+    description: "The Autism Society of America Honors Metin" 
+  },  
+  {
+    image: tribuna,
+    title: 'Metin in the Tribna',
+    name: 'exposition-tribuna',
+    description: "Metin paints with disabled persons and children" 
+  }, 
+  {
+    image: gardenOfPage,
+    title: 'Garden of Page',
+    name: 'exposition-garden-of-page',
+    description: 'Metin\'s Garden of Page Feature'
+  },
+  {
+    image: autismAmerica,
+    title: 'Autism Society America',
+    name: 'exposition-autism-america',
+    description: 'Metin\'s involvement with autism society america'
+  },
+  {
+    image: friendsNYPost,
+    title: 'New York Post',
+    name: 'exposition-ny-post',
+    description: 'Metin\'s New York Post feature'
+  },
+  {
+    image: friendsTimes,
+    title: 'Times Magazine',
+    name: 'exposition-friends-times',
+    description: 'Metin\'s Times Magazine feature'
+  },
+]
+
 export const expositions = [
   {
     image: rock,
@@ -242,30 +288,28 @@ export const expositions = [
     name: 'exposition-keanu-reeves',
     description: "Keanu Reeves loves Metin\'s artwork" 
   },
- 
   {
     image: autism,
     title: 'Autism Advocate',
     name: 'exposition-autism advocate',
     description: "Metin uses his talents to give back" 
   },
-
   {
-    image: autismHonor,
-    title: 'ASA\'s evening of Champions',
-    name: 'exposition-autism-honor',
-    description: "The Autism Society of America Honors Metin" 
-  },
-
-  {
-    image: tribuna,
-    title: 'Metin in the Tribna',
-    name: 'exposition-tribuna',
-    description: "Metin paints with disabled persons and children" 
-  }, {
     image: EXlincoln,
     title: 'Lincoln',
     name: 'exposition-abraham-lincoln',
-    description: 'Metin\'s artowork Abraham Lincoln'
+    description: 'Metin\'s artwork Abraham Lincoln'
+  },
+  {
+    image: EXFriends,
+    title: 'Friends',
+    name: 'exposition-friends',
+    description: 'Metin\'s art featured in "Friends"'
+  },
+  {
+    image: primitiveEMMY,
+    title: 'Primitive Emmy',
+    name: 'exposition-primitive-emmy',
+    description: 'Metin\'s primitive Emmy Award'
   },
 ]

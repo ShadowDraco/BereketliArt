@@ -34,7 +34,7 @@ const links = [
 ];
 
 export function MainHeader() {
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, { toggle, close }] = useDisclosure(false);
 
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
@@ -91,7 +91,17 @@ export function MainHeader() {
           <Group gap={'md'} visibleFrom="sm">
             {items}
           </Group>
-          <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
+
+          <Menu width={200} shadow="md">
+            <Menu.Target>
+              <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
+            </Menu.Target>
+            <Menu.Dropdown>
+              {items.map((item) => (
+                <Menu.Item onClick={close}>{item}</Menu.Item>
+              ))}
+            </Menu.Dropdown>
+          </Menu>
         </div>
       </Container>
     </header>

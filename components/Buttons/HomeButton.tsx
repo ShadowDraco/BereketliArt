@@ -1,10 +1,10 @@
-import React from 'react'
-import { useMantineColorScheme } from '@mantine/core'
-import { ActionIcon } from '@mantine/core'
+import React from 'react';
+import { useMantineColorScheme, ActionIcon } from '@mantine/core';
 import { IconHome } from '@tabler/icons-react';
 import Link from 'next/link';
+
 export default function HomeButton() {
-   const { colorScheme} = useMantineColorScheme();
+  const { colorScheme } = useMantineColorScheme();
   return (
     <ActionIcon variant="subtle" size="input-sm">
       <Link href="/" style={{ textDecoration: 'none', color: 'black' }}>
