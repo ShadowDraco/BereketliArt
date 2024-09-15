@@ -3,6 +3,7 @@
 import { Title, Text, Button, Container, Space } from '@mantine/core';
 import { Dots } from './Dots';
 import classes from './HeroText.module.css';
+import Link from 'next/link';
 
 export function UnderConstruction() {
   return (
@@ -33,12 +34,16 @@ export function UnderConstruction() {
           </Container>
 
           <div className={classes.controls}>
-            <Button className={classes.control} size="lg" variant="default" color="gray">
-              Return to home
-            </Button>
-            <Button className={classes.control} size="lg">
-              Admire finished works
-            </Button>
+            <Link href="/">
+              <Button className={classes.control} size="lg" variant="default" color="gray" mx="sm">
+                Return to home
+              </Button>
+            </Link>
+            <Link href="/works">
+              <Button className={classes.control} size="lg" mx="sm">
+                Admire finished works
+              </Button>
+            </Link>
           </div>
         </div>
       </Container>
