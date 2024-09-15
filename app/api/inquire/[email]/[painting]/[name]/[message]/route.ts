@@ -21,7 +21,7 @@ export async function POST(req: Request, route: { params: InquiryParams }) {
       })
     );
   } catch (error) {
-    console.log('ERROR sending APPOINTMENT EMAIL', error);
+    console.log('ERROR sending INQUIRY EMAIL', error);
     return new Response(
       JSON.stringify({
         success: 'failed',

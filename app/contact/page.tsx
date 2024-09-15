@@ -1,11 +1,21 @@
+import React from 'react';
 import { MessageForm } from '@/components/Message/MessageForm';
 
-import React from 'react';
+export default async function page() {
+  const submit = async (email: string, name: string, text: string) => {
+    'use server';
 
-export default function page() {
+    const response = await fetch(`${process.env.URL}/api/message/${email}/${name}/${text}`, {
+      method: 'POST',
+    });
+    const res = await response.json();
+
+    return res;
+  };
+
   return (
-    <div className="magicpattern">
-      <MessageForm />
+    <div>
+      <MessageForm submit={submit} />
     </div>
   );
 }

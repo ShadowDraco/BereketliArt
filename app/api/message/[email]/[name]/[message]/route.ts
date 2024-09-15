@@ -5,7 +5,6 @@ type MessageParams = {
   name: 'string';
   message: 'string';
 };
-
 export async function POST(req: Request, route: { params: MessageParams }) {
   const inquiry = { ...route.params };
 
@@ -17,11 +16,11 @@ export async function POST(req: Request, route: { params: MessageParams }) {
         success: 'success',
         message: 'Request received',
         status: 200,
-        statusText: 'Your message has been received!',
+        statusText: 'Your  message has been received!',
       })
     );
   } catch (error) {
-    console.log('ERROR sending APPOINTMENT EMAIL', error);
+    console.log('ERROR sending MESSAGE EMAIL', error);
     return new Response(
       JSON.stringify({
         success: 'failed',

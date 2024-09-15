@@ -43,5 +43,5 @@
     "**/*.ts",
     "**/*.tsx",
     "additional.d.ts"
-  ]
+, "app/functions/encryptMessage.js", "components/Message/SubmitButton.jsx"  ]
 }
