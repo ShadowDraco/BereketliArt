@@ -1,8 +1,13 @@
 import { mailgunClient } from './mailgun';
 
 const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN || '';
-
-export default async function sendInquiryEmail(inquiry) {
+type InquiryParams = {
+  email: 'string';
+  painting: 'string';
+  name: 'string';
+  message: 'string';
+};
+export default async function sendInquiryEmail(inquiry: InquiryParams) {
   console.log(inquiry);
   const messageData = {
     from: `Bereketli Art INQUIRY <Messianic@WebServices>`,

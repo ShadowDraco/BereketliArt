@@ -2,7 +2,13 @@ import { mailgunClient } from './mailgun';
 
 const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN || '';
 
-export default async function sendMessageEmail(message) {
+type MessageParams = {
+  email: 'string';
+  name: 'string';
+  message: 'string';
+};
+
+export default async function sendMessageEmail(message: MessageParams) {
   const messageData = {
     from: `Bereketli Art MESSAGE <Messianic@WebServices>`,
     //to: 'hollywoodpainter@gmail.com',

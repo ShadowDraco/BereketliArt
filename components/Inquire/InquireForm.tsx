@@ -6,19 +6,22 @@ import { ContactIconsList } from './InquireIcons';
 import classes from './Inquire.module.css';
 
 export function InquireForm() {
-  const emailRef = useRef(null);
-  const selectRef = useRef(null);
-  const nameRef = useRef(null);
-  const messageRef = useRef(null);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const selectRef = useRef<HTMLInputElement>(null);
+  const nameRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
 
   const [message, setMessage] = useState('');
 
   const submit = async () => {
-    console.log(messageRef.current.value);
-    const response = await fetch(
-      `/api/inquire/${emailRef.current.value}/${selectRef.current.value}/${nameRef.current.value}/${messageRef.current.value}`,
-      { method: 'POST' }
-    );
+    const email = emailRef.current?.value;
+    const name = nameRef.current?.value;
+    const select = selectRef.current?.value;
+    const text = messageRef.current?.value;
+
+    const response = await fetch(`/api/inquire/${email}/${select}/${name}/${message}`, {
+      method: 'POST',
+    });
     const res = await response.json();
 
     setMessage(res.success);
