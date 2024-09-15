@@ -1,9 +1,9 @@
 'use client';
 
 import { Title, Text, Button, Container, Space } from '@mantine/core';
+import Link from 'next/link';
 import { Dots } from './Dots';
 import classes from './HeroText.module.css';
-import Link from 'next/link';
 
 export function UnderConstruction() {
   return (

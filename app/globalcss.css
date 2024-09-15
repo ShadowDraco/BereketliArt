@@ -2,6 +2,8 @@
   transition: ease-in-out opacity 1.2s;
 }
 
+@import '~react-image-gallery/styles/css/image-gallery.css';
+
 .click-me {
   cursor: pointer;
 }

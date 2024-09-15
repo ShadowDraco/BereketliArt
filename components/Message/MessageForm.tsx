@@ -11,7 +11,9 @@ export function MessageForm() {
   const nameRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
 
+  const [success, setSuccess] = useState('');
   const [message, setMessage] = useState('');
+  const [enabled, setEnabled] = useState(true);
 
   const submit = async () => {
     const email = emailRef.current?.value;
@@ -20,8 +22,9 @@ export function MessageForm() {
 
     const response = await fetch(`/api/message/${email}/${name}/${text}`, { method: 'POST' });
     const res = await response.json();
-
-    setMessage(res.success);
+    setSuccess(res.success);
+    setMessage(res.statusText);
+    setEnabled(false);
   };
 
   return (
@@ -63,11 +66,12 @@ export function MessageForm() {
           />
 
           <Group justify="flex-end" mt="md">
-            <Text style={{ color: message === 'success' ? 'green' : 'red' }}>
+            <Text size="md" style={{ color: success === 'success' ? 'green' : 'red' }}>
               {message && message}
             </Text>
             <Button
               className={classes.control}
+              disabled={!enabled}
               onClick={() => {
                 submit();
               }}

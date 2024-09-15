@@ -17,7 +17,7 @@ export async function POST(req: Request, route: { params: InquiryParams }) {
         success: 'success',
         message: 'Request received',
         status: 200,
-        statusText: 'Your request has been received',
+        statusText: 'Your inquiry has been received!',
       })
     );
   } catch (error) {
@@ -27,7 +27,7 @@ export async function POST(req: Request, route: { params: InquiryParams }) {
         success: 'failed',
         message: 'Request received',
         status: 500,
-        statusText: 'There was an error',
+        statusText: 'There was an error, please try again later.',
       })
     );
   }

@@ -11,7 +11,9 @@ export function InquireForm() {
   const nameRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
 
+  const [success, setSuccess] = useState('');
   const [message, setMessage] = useState('');
+  const [enabled, setEnabled] = useState(true);
 
   const submit = async () => {
     const email = emailRef.current?.value;
@@ -24,7 +26,9 @@ export function InquireForm() {
     });
     const res = await response.json();
 
-    setMessage(res.success);
+    setSuccess(res.success);
+    setMessage(res.statusText);
+    setEnabled(false);
   };
 
   return (
@@ -73,9 +77,12 @@ export function InquireForm() {
           />
 
           <Group justify="flex-end" mt="md">
-            <Text style={{ color: message === 'success' ? 'green' : 'red' }}></Text>
+            <Text size="md" style={{ color: success === 'success' ? 'green' : 'red' }}>
+              {message && message}
+            </Text>
             <Button
               className={classes.control}
+              disabled={!enabled}
               onClick={() => {
                 submit();
               }}
