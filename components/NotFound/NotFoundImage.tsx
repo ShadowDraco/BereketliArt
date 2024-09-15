@@ -1,9 +1,9 @@
 'use client';
 
 import { Image, Container, Title, Text, Button, SimpleGrid } from '@mantine/core';
+import Link from 'next/link';
 import image from './HollyWoodPainter.webp';
 import classes from './NotFoundImage.module.css';
-import Link from 'next/link';
 
 export function NotFoundImage() {
   return (
