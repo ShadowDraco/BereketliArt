@@ -1,5 +1,6 @@
 'use client';
 
+import { isMobile } from 'react-device-detect';
 import { Menu, Group, Center, Burger, Container, Flex } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
@@ -9,11 +10,11 @@ import { ColorSchemeToggle } from '../Buttons/ColorSchemeToggle';
 import classes from './MainHeader.module.css';
 import HomeButton from '../Buttons/HomeButton';
 
-const links = [
+let links = [
   { link: '/works', label: 'Works' },
   { link: '/about', label: 'About' },
   {
-    link: '#1',
+    link: '#',
     label: 'Spotlight',
     links: [
       { link: '/press', label: 'Press' },
@@ -24,7 +25,7 @@ const links = [
     ],
   },
   {
-    link: '#2',
+    link: '#',
     label: 'Contact Us',
     links: [
       { link: '/contact', label: 'Contact' },
@@ -32,6 +33,17 @@ const links = [
     ],
   },
 ];
+
+if (isMobile) {
+  links = [
+    { link: '/works', label: 'Works' },
+    { link: '/about', label: 'About' },
+    { link: '/press', label: 'Press' },
+    { link: '/features', label: 'Expositions' },
+    { link: '/contact', label: 'Contact' },
+    { link: '/inquire', label: 'Inquire' },
+  ];
+}
 
 export function MainHeader() {
   const [opened, { toggle, close }] = useDisclosure(false);
@@ -47,7 +59,7 @@ export function MainHeader() {
       return (
         <Menu
           key={`${link.label}-menu-label`}
-          trigger="hover"
+          trigger="click-hover"
           transitionProps={{ exitDuration: 0 }}
           withinPortal
         >
@@ -98,7 +110,13 @@ export function MainHeader() {
             </Menu.Target>
             <Menu.Dropdown>
               {items.map((item) => (
-                <Menu.Item onClick={close}>{item}</Menu.Item>
+                <Menu.Item
+                  onClick={() => {
+                    close;
+                  }}
+                >
+                  {item}
+                </Menu.Item>
               ))}
             </Menu.Dropdown>
           </Menu>

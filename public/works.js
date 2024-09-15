@@ -30,6 +30,14 @@ import mcdonne from './charity/McDonne.jpg';
 //? Press
 
 import amorEnAccion from './press/EspirituCatolico.jpg';
+import autismHonor from './press/autismHonor.jpg'
+import autismAmerica from './press/autism-america.jpg'
+import friendsNYPost from './press/friends-ny-post.jpg'
+import friendsTimes from './press/friends-times.jpg'
+import gardenOfPage from './press/gardens-of-page.jpg'
+import tribuna from './press/tribuna.jpg'
+import dailyBreeze from './press/DailyBreeze.jpg'
+import triumphAwards from './press/TriumphAwards.jpg'
 
 //? Cities
 
@@ -48,13 +56,7 @@ import EXjfk from './expositions/jfk.jpg'
 import EXlincoln from './expositions/lincoln.jpg'
 import petrus from './expositions/petrus.jpg'
 import autism from './expositions/autism.jpg'
-import autismHonor from './expositions/autismHonor.jpg'
-import tribuna from './expositions/tribuna.jpg'
-import autismAmerica from './expositions/autism-america.jpg'
-import friendsNYPost from './expositions/friends-ny-post.jpg'
-import friendsTimes from './expositions/friends-times.jpg'
 import EXFriends from './expositions/friends.jpg'
-import gardenOfPage from './expositions/gardens-of-page.jpg'
 import primitiveEMMY from './expositions/primitive-emmy.jpg'
 
 
@@ -207,41 +209,54 @@ export const diversity = [
 
 export const press = [
   {
+    image: dailyBreeze,
+    title: "Metin in Daily Breeze",
+    name: "daily-breeze-patriot",
+    description: "The Hollywood painter supports Israel"
+  },
+  {
+    image: triumphAwards,
+    title: "Triumph Awards Gala",
+    name: "triumph-awards-gala",
+    description: "Metin on the cover of the Triumph awards invitation"
+  },
+  {
     image: autismHonor,
     title: 'ASA\'s evening of Champions',
-    name: 'exposition-autism-honor',
+    name: 'press-autism-honor',
     description: "The Autism Society of America Honors Metin" 
   },  
   {
     image: tribuna,
     title: 'Metin in the Tribna',
-    name: 'exposition-tribuna',
+    name: 'press-tribuna',
     description: "Metin paints with disabled persons and children" 
   }, 
   {
     image: gardenOfPage,
     title: 'Garden of Page',
-    name: 'exposition-garden-of-page',
+    name: 'press-garden-of-page',
     description: 'Metin\'s Garden of Page Feature'
   },
   {
     image: autismAmerica,
     title: 'Autism Society America',
-    name: 'exposition-autism-america',
+    name: 'press-autism-america',
     description: 'Metin\'s involvement with autism society america'
   },
   {
     image: friendsNYPost,
     title: 'New York Post',
-    name: 'exposition-ny-post',
+    name: 'press-ny-post',
     description: 'Metin\'s New York Post feature'
   },
   {
     image: friendsTimes,
     title: 'Times Magazine',
-    name: 'exposition-friends-times',
+    name: 'press-friends-times',
     description: 'Metin\'s Times Magazine feature'
   },
+
 ]
 
 export const expositions = [

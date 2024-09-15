@@ -14,6 +14,8 @@ export default function MetinHero() {
         placeholder="blur"
         blurDataURL={HollywoodPainter.blurDataURL}
         alt="Metin Bereketli posing with a smile, and covered in paint."
+        style={{ maxWidth: '50%' }}
+        layout="responsive"
       />
     </Flex>
   );
