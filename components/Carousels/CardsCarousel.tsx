@@ -5,13 +5,16 @@ import { Paper, Text, Title, Button, useMantineTheme, rem, Container } from '@ma
 import classes from './CardsCarousel.module.css';
 import Quantum1 from '/public/FrontArt/QuantumHollywood1.jpg';
 import Quantum2 from '/public/FrontArt/QuantumHollywood2.jpg';
+import Diversity2 from '/public/FrontArt/Diversity2.jpg';
+import GoldenEagles from '/public/FrontArt/GoldenEagles.jpg';
 interface CardProps {
   image: string;
   title: string;
   category: string;
+  color: string;
 }
 
-function Card({ image, title, category }: CardProps) {
+function Card({ image, title, category, color }: CardProps) {
   return (
     <Paper
       shadow="md"
@@ -20,13 +23,13 @@ function Card({ image, title, category }: CardProps) {
       style={{
         backgroundImage: `url(${image})`,
       }}
-      className={classes.card}
+      className={`${classes.card} conic-border`}
     >
       <div>
-        <Text className={classes.category} size="xs">
+        <Text className={classes.category} size="xs" style={{ color: color ? color : 'white' }}>
           {category}
         </Text>
-        <Title order={3} className={classes.title}>
+        <Title order={3} className={classes.title} style={{ color: color ? color : 'white' }}>
           {title}
         </Title>
       </div>
@@ -49,16 +52,16 @@ const data = [
     category: 'Inspired',
   },
   {
-    image:
-      'https://images.unsplash.com/photo-1608481337062-4093bf3ed404?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Mountains at night: 12 best locations to enjoy the view',
-    category: 'nature',
+    image: Diversity2.src,
+    title: 'Diversity 2',
+    category: 'Diversity',
+    color: 'black',
   },
   {
-    image:
-      'https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Aurora in Norway: when to visit for best experience',
-    category: 'nature',
+    image: GoldenEagles.src,
+    title: 'Golden Eagles',
+    category: 'Nature',
+    color: 'black',
   },
   {
     image:

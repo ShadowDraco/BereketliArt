@@ -2,7 +2,10 @@ import React from 'react';
 import { Text, Flex } from '@mantine/core';
 import { IconEye } from '@tabler/icons-react';
 import { useHover } from '@mantine/hooks';
-export default function ToggleOpacity({ x, y }) {
+
+
+type Arguments = { x: number; y: number };
+export default function ToggleOpacity({x, y} : Arguments ) {
   const { hovered, ref } = useHover();
 
   return (
