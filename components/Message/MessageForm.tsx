@@ -6,7 +6,7 @@ import { ContactIconsList } from '../Inquire/InquireIcons';
 
 import classes from '../Inquire/Inquire.module.css';
 
-export function MessageForm({ submit }) {
+export function MessageForm(submit: any) {
   const emailRef = useRef<HTMLInputElement>(null);
 
   const nameRef = useRef<HTMLInputElement>(null);
