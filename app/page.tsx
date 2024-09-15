@@ -7,7 +7,7 @@ import FeaturedArt from '@/components/Features/FeaturedArt';
 
 export default function HomePage() {
   return (
-    <>
+    <div className="FadeMeIn">
       <HeroHeader />
       <Space h={'xl'} />
       <FeaturedArt />
@@ -16,6 +16,6 @@ export default function HomePage() {
 
       <Space h="xl" />
       <FeaturesGrid />
-    </>
+    </div>
   );
 }

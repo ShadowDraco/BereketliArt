@@ -22,9 +22,9 @@ export function UnderConstruction() {
           <Title className={`${classes.title} `}>
             This Page{' '}
             <Text component="span" className={classes.highlight} inherit>
-              Is still being painted
+              Is Still Being Painted
             </Text>{' '}
-            for you
+            For You
           </Title>
 
           <Container p={0} size={600}>

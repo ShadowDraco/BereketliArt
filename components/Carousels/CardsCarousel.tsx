@@ -29,7 +29,7 @@ function Card({ image, title, category, background, url }: CardProps) {
       style={{
         backgroundImage: `url(${image})`,
       }}
-      className={`${classes.card}`}
+      className={`${classes.card} click-me`}
       onClick={() => {
         idle ? toggle(true) : toggle();
       }}

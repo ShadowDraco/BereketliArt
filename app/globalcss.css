@@ -8,6 +8,56 @@
   cursor: pointer;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 35%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.darker {
+  background-color: rgb(218, 207, 207);
+  border: 10px rgb(37, 37, 37) ridge;
+}
+
+.FadeMeIn {
+  animation: 1s ease-out 0s 1 fadeIn;
+}
+
+.center-page {
+  text-align: center;
+  margin: auto;
+  height: 50vh;
+  width: 60vw;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #cef;
+  border-color: #cef transparent #cef transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .custom-overlay__caption {
   background-color: rgba(0, 0, 0, 0.8);
   max-height: 240px;
