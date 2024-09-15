@@ -46,7 +46,7 @@ const data = [
   {
     image: Quantum2.src,
     title: 'Quantum Hollywood 2',
-    category: 'beach',
+    category: 'Inspired',
   },
   {
     image:
@@ -84,18 +84,16 @@ export function CardsCarousel() {
   ));
 
   return (
-    <Container height="25%">
-      <Carousel
-        slideSize={{ base: '100%', sm: '50%' }}
-        slideGap={{ base: rem(2), sm: 'xl' }}
-        align="start"
-        slidesToScroll={mobile ? 1 : 2}
-        loop
-        dragFree
-        draggable
-      >
-        {slides}
-      </Carousel>
-    </Container>
+    <Carousel
+      slideSize={{ base: '100%', sm: '50%' }}
+      slideGap={{ base: rem(2), sm: 'xl' }}
+      align="start"
+      slidesToScroll={mobile ? 1 : 2}
+      loop
+      dragFree
+      draggable
+    >
+      {slides}
+    </Carousel>
   );
 }
