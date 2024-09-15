@@ -2,6 +2,10 @@
   transition: ease-in-out opacity 1.2s;
 }
 
+.click-me {
+  cursor: pointer;
+}
+
 @property --angle {
   syntax: '<angle>';
   initial-value: 90deg;

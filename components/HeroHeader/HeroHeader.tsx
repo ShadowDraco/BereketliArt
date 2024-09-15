@@ -14,7 +14,7 @@ export function HeroHeader() {
 
   return (
     <Box
-      className={`${classes.hero}`}
+      className={`${classes.hero} click-me`}
       onClick={() => {
         toggle();
       }}
