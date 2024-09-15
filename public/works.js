@@ -29,6 +29,12 @@ import mcdonne from './charity/McDonne.jpg';
 
 import amorEnAccion from './press/EspirituCatolico.jpg';
 
+//? Cities
+
+import cincinnati from './cities/Cincinnati.jpg';
+import lasVegas from './cities/LasVegas.jpg';
+import saskatoon from './cities/SaskatoonCanada.jpg';
+
 export const works = [
   {
     image: quantum1,
@@ -68,12 +74,12 @@ export const works = [
 ];
 
 export const worldLeaders = [
-  {
+  /* {
     image: jfk,
     title: 'JFK',
     name: 'jfk',
     description: 'We still miss you...',
-  },
+  },*/
   {
     image: lincoln,
     title: 'Forever Free',
@@ -122,5 +128,27 @@ export const pressWorks = [
     name: 'espiritu-catolico',
     description:
       "Metin's event is featured in spanish newspaper Espiritu Catolico with a beautiful front page",
+  },
+];
+
+export const cities = [
+  {
+    image: cincinnati,
+    title: 'Cincinnati',
+    name: 'cincinnati',
+    description:
+      "Oiginal Cincinnati painting is created with infinite patience by the artist Metin Bereketli -- by millions of free-hand strokes applied with a thin brush on a canvas through the aid of a magnifying glass. That's why you need a magnifying glass to see all the fine details in this unique painting.",
+  },
+  {
+    image: saskatoon,
+    title: 'Saskatoon Canada',
+    name: 'saskatoon',
+    description: 'Original Saskatoon painting by Metin Bereketli, 19"x16" Acrylic on canvas',
+  },
+  {
+    image: lasVegas,
+    title: 'Las Vegas',
+    name: 'las-vegas',
+    description: 'Original Saskatoon painting by Metin Bereketli, 28"x 22" Acrylic on Canvas',
   },
 ];
