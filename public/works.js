@@ -47,8 +47,9 @@ import EXreagan from './expositions/reagan.jpg'
 import EXjfk from './expositions/jfk.jpg'
 import EXlincoln from './expositions/lincoln.jpg'
 import petrus from './expositions/petrus.jpg'
-
-
+import autism from './expositions/autism.jpg'
+import autismHonor from './expositions/autismHonor.jpg'
+import tribuna from './expositions/tribuna.jpg'
 
 
 export const works = [
@@ -210,7 +211,7 @@ export const expositions = [
     name: 'exposition-petrus-maximus',
     description: "Metin\'s original artwork 'Petrus Maximus'" 
   },
-  
+
   {
     image: EXjfk,
     title: 'John F. Kennedy',
@@ -241,10 +242,30 @@ export const expositions = [
     name: 'exposition-keanu-reeves',
     description: "Keanu Reeves loves Metin\'s artwork" 
   },
+ 
   {
+    image: autism,
+    title: 'Autism Advocate',
+    name: 'exposition-autism advocate',
+    description: "Metin uses his talents to give back" 
+  },
+
+  {
+    image: autismHonor,
+    title: 'ASA\'s evening of Champions',
+    name: 'exposition-autism-honor',
+    description: "The Autism Society of America Honors Metin" 
+  },
+
+  {
+    image: tribuna,
+    title: 'Metin in the Tribna',
+    name: 'exposition-tribuna',
+    description: "Metin paints with disabled persons and children" 
+  }, {
     image: EXlincoln,
     title: 'Lincoln',
     name: 'exposition-abraham-lincoln',
     description: 'Metin\'s artowork Abraham Lincoln'
-  }
+  },
 ]
