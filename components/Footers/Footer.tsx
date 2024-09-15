@@ -1,7 +1,7 @@
 'use client';
 
 import { Text, Container, ActionIcon, Group, rem } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
+import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconBrandLinkedin } from '@tabler/icons-react';
 
 import Link from 'next/link';
 import classes from './Footer.module.css';
@@ -12,16 +12,16 @@ const data = [
     links: [
       { label: 'Bio', link: '/about' },
       { label: 'Works', link: '/works' },
-      { label: 'Features', link: '/features' },
-      { label: 'More', link: '/more' },
+      //{ label: 'Features', link: '/features' },
+      //{ label: 'More', link: '/more' },
     ],
   },
   {
     title: 'Involvement',
     links: [
-      { label: 'Charity', link: '/charity' },
+      //{ label: 'Charity', link: '/charity' },
       { label: 'Press', link: '/press' },
-      { label: 'Store', link: '/store' },
+      //{ label: 'Store', link: '/store' },
     ],
   },
   {
@@ -86,6 +86,11 @@ export function MainFooter() {
           <Link href="https://www.instagram.com/healingpainter" target="_blank">
             <ActionIcon size="lg" color="gray" variant="subtle">
               <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+            </ActionIcon>
+          </Link>
+          <Link href="https://www.linkedin.com/in/metinbereketli/" target="_blank">
+            <ActionIcon size="lg" color="gray" variant="subtle">
+              <IconBrandLinkedin style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
             </ActionIcon>
           </Link>
         </Group>

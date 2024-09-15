@@ -8,7 +8,7 @@ export function HeroTitle() {
       <Container size={700} className={classes.inner}>
         <h1 className={classes.title}>
           <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
-            Healing Painter
+            Healing Painter {" "}
           </Text>
           <Text
             component="span"
