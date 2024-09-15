@@ -1,5 +1,6 @@
 import { Text, Box, Stack, rem } from '@mantine/core';
 import { IconSun, IconPhone, IconMapPin, IconAt } from '@tabler/icons-react';
+import Link from 'next/link';
 import classes from './InquireIcons.module.css';
 
 interface ContactIconProps extends Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
@@ -26,12 +27,36 @@ function InquireIcon({ icon: Icon, title, description, ...others }: ContactIconP
 }
 
 const MOCKDATA = [
-  { title: 'Email', description: 'metinart@gmail.com', icon: IconAt },
-  { title: 'Phone', description: '(323) 856-4789', icon: IconPhone },
-  { title: 'P.O. Box', description: 'Beverly Hills, CA 90213', icon: IconMapPin },
+  { title: 'MDAM Art', description: 'Private Art Museum', icon: IconAt, url: 'https://mdam.art' },
+  {
+    title: 'Phone',
+    description: (
+      <Link
+        href="tel:7607999079"
+        target="_blank"
+        style={{ textDecoration: 'none', color: 'white' }}
+      >
+        (760) 799-9079
+      </Link>
+    ),
+    icon: IconPhone,
+  },
+  {
+    title: 'Address',
+    description: '9800 Wilshire Blvd, Beverly Hills, CA 90212',
+    icon: IconMapPin,
+  },
 ];
 
 export function ContactIconsList() {
-  const items = MOCKDATA.map((item, index) => <InquireIcon key={index} {...item} />);
+  const items = MOCKDATA.map((item, index) =>
+    item.url ? (
+      <Link href={item.url} key={index} target="_blank" style={{ textDecoration: 'none' }}>
+        <InquireIcon {...item} />
+      </Link>
+    ) : (
+      <InquireIcon key={index} {...item} />
+    )
+  );
   return <Stack>{items}</Stack>;
 }

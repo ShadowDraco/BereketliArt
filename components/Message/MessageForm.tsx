@@ -32,7 +32,7 @@ export function MessageForm(props: any) {
         <div>
           <Title className={classes.title}>Contact us</Title>
           <Text className={classes.description} mt="sm" mb={30}>
-            Let us know what you are looking for! We will be in touch promptly!
+            Securely Message Metin for general information. We will be in touch promptly!
           </Text>
 
           <ContactIconsList />

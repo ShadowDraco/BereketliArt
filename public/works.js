@@ -25,6 +25,10 @@ import jarvee from './charity/jarvee-metin.jpg';
 import marjcohen from './charity/MarjCohen.jpg';
 import mcdonne from './charity/McDonne.jpg';
 
+//? Press
+
+import amorEnAccion from './press/EspirituCatolico.jpg';
+
 export const works = [
   {
     image: quantum1,
@@ -57,10 +61,10 @@ export const works = [
   //{ image: lunch, title: 'Lunch Time Melody', name: 'lunch-time-melody', description: '' },
   //{ image: diversity2, title: 'Diversity 2', name: 'diversity-2', description: '' },
   { image: diversity5, title: 'Diversity 5', name: 'diversity-5', description: '' },
- // { image: golden, title: 'Golden Eagles', name: 'golden-eagles', description: '' },
+  // { image: golden, title: 'Golden Eagles', name: 'golden-eagles', description: '' },
   //{ image: intricacy, title: 'Intricacy', name: 'intricacy', description: '' },
   { image: dancers, title: 'Dancers', name: 'dancers', description: '' },
- // { image: ana, title: 'Ana', name: 'ana', description: '' },
+  // { image: ana, title: 'Ana', name: 'ana', description: '' },
 ];
 
 export const worldLeaders = [
@@ -108,5 +112,15 @@ export const charities = [
     title: 'Jack Webb LAPD',
     name: 'jackwebb-04',
     description: 'Metin donates Art for 11th Annual Jack Webb Awards benefiting LAPD',
+  },
+];
+
+export const pressWorks = [
+  {
+    image: amorEnAccion,
+    title: 'Amor En Accion',
+    name: 'espiritu-catolico',
+    description:
+      "Metin's event is featured in spanish newspaper Espiritu Catolico with a beautiful front page",
   },
 ];

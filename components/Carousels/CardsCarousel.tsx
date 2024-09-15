@@ -9,6 +9,7 @@ import Quantum1 from '/public/FrontArt/QuantumHollywood1.jpg';
 import Quantum2 from '/public/FrontArt/QuantumHollywood2.jpg';
 import BurlesqueParody from '/public/FrontArt/BurlesqueParody.webp';
 import Carnival from '/public/FrontArt/CarnivalCurtain.jpg';
+import Petras from '/public/FrontArt/PetrasMaximus.jpg';
 
 interface CardProps {
   image: string;
@@ -93,6 +94,13 @@ const data = [
     image: Carnival.src,
     title: 'Carnival Curtain',
     url: '/works/carnival-curtain',
+    category: 'AVAILABLE',
+    background: true,
+  },
+  {
+    image: Petras.src,
+    title: 'Petras Maximus',
+    url: '/works/petras-maximus',
     category: 'AVAILABLE',
     background: true,
   },
