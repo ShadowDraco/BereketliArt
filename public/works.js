@@ -38,6 +38,27 @@ import gardenOfPage from './press/gardens-of-page.jpg'
 import tribuna from './press/tribuna.jpg'
 import dailyBreeze from './press/DailyBreeze.jpg'
 import triumphAwards from './press/TriumphAwards.jpg'
+import ameriface from './press/ameriface.jpg'
+import asymAwards from './press/asym-awards.jpg'
+import bestBuddies from './press/best-buddies.jpg'
+import bridgingTheGap from './press/bridging-the-gap-apla.jpg'
+import carosuelOfHope from './press/carosuel-of-hope.jpg'
+import cornucopicaMagazine from './press/cornucopia-magazine.jpg'
+import csiNY from './press/csi-ny.jpg'
+import darfukForum from './press/darfuk-forum.jpg'
+import davidWoscowOscar from './press/david-woscow-oscar.jpg'
+import eluxeMagazine from './press/eluxe-magazine.jpg'
+import enviornmentalBiology from './press/enviornmental-biology.jpg'
+import erShow from './press/er-show.jpg' 
+import Idopwd1 from './press/Idopwd1.jpg'
+import johnHopkinsUniversity from './press/john-hopkins-university.jpg'
+import justiceRuth from './press/justice-ruth-ginsburg.jpg'
+import justiceSandra from './press/justice-sandra-day.jpg'
+import shrinersHospital from './press/shriners-hospital.jpg'
+import socalSpecialOlympics from './press/socal-special-olympics.jpg'
+import soulMadeFriends from './press/soul-made-friends.jpg'
+import stopDomesticViolence from './press/stop-domestic-violence.jpg'
+import tomSulivanChildrensCenter from './press/tom-sulivan-childrens-center.jpg'
 
 //? Cities
 
@@ -256,7 +277,124 @@ export const press = [
     name: 'press-friends-times',
     description: 'Metin\'s Times Magazine feature'
   },
-
+  {
+    image: ameriface,
+    title: 'Ameriface',
+    name: 'ameriface',
+    description: 'Ameriface presents Bereketli in Las Vegas'
+  },
+  {
+    image: csiNY,
+    title: 'CSI:NY',
+    name: 'csi-ny',
+    description: "Metin's original artwork in CSI:NY"
+  },
+  {
+    image: eluxeMagazine,
+    title: 'Eluxe Magazine',
+    name: 'eluxe-magazine',
+    description: 'Metin: "Peace Beyond Faith" in Eluxe Magazine' ,
+  },
+  {
+    image: asymAwards,
+    title: 'ASYM AWARDS',
+    name: 'asym-awards',
+    description: "Metin's Mardi Gras on the front and back cover of ASYM Awards"
+  },
+  {
+    image: enviornmentalBiology,
+    title: 'Enviornmental Biology',
+    name: 'enviornmental-biology',
+    description: 'Metin for "Official Artist of the Development Biology of Human Being!'
+  },
+  {
+    image: erShow,
+    title: 'Maura Tierney: ER',
+    name: 'er-show',
+    description: 'The Start of "ER" standing in front of "Bridging The Gap"'
+  },
+  {
+    image: bestBuddies,
+    title: 'Best Buddies',
+    name: 'best-buddies',
+    description: 'Metin receives a letter of appreciation from Founder of Best Buddies International!'
+  },
+  {
+    image: tomSulivanChildrensCenter,
+    title: 'Blind Children Center',
+    name: 'tom-sul-blind-children-center',
+    description: 'Letter of appreciation from The Tom Sullivan Blind Children\'s center'
+  },
+  {
+    image: carosuelOfHope,
+    title: 'Carosuel of Hope',
+    name: 'carosuel-of-hope',
+    description: 'Metin is recognized for donating signed lithographs to support Carosuel of Hope'
+  },
+  {
+    image: Idopwd1,
+    title: 'Persons with Disabilities',
+    name: 'idopwd1',
+    description: "Metin's philosophy of philanthropy"
+  },
+  {
+    image: cornucopicaMagazine,
+    title: 'Cornucopia Magazine',
+    name: 'cornucopia-magazine',
+    description: "Metin's artwork is considered in the Cornucopia Magazine"
+  },
+  {
+    image: darfukForum,
+    title: 'Darfur Forum',
+    name: 'darfur-forum',
+    description: '"Diversity1" is selected as the offical art of the Darfur Forum'
+  },
+  {
+    image: davidWoscowOscar,
+    title: 'Oscar-Winning David',
+    name: 'david-woscow-oscarb',
+    description: 'Letter of appreciation from David Wascow'
+  },
+  {
+    image: stopDomesticViolence,
+    title: 'Stop Domestic Violence',
+    name: 'stop-domestic-violence',
+    description: '"Diversity4" donated as a benefit for victims of domestic violence'
+  },{
+    image: johnHopkinsUniversity,
+    title: 'John Hopkins University',
+    name: 'john-hopkins-university',
+    description: 'Letter of appreciation from Professor George J. Dover'
+  },{
+    image: justiceRuth,
+    title: 'Justice Ruth Ginsburg',
+    name: 'justice-ruth',
+    description: 'Letter of appreciation from the honorable Supreme Court Justice'
+  },{
+    image: justiceSandra,
+    title: 'justice-sandra',
+    name: 'justice-sandra-day',
+    description: 'Supreme Court Justice Sandra Day wrote a letter of appreciation'
+  },{
+    image: shrinersHospital,
+    title: 'Shriners Hospital',
+    name: 'shriners-hospitals',
+    description: 'Metin is honored to have worked with Shriners Hospitals'
+  },{
+    image: soulMadeFriends,
+    title: 'Soul Made in Friends',
+    name: 'soul-made-friends',
+    description: '"Soul Made" is seen in the hit show Friends!'
+  },{
+    image: socalSpecialOlympics,
+    title: 'SoCal Special Olympics',
+    name: 'socal-special-olympics',
+    description: 'The SoCal Special Olympics honors Metin with a letter of appreciation'
+  }, {
+    image: bridgingTheGap,
+    title: "Bridging the Gap",
+    name: 'bridging-the-gap',
+  description: 'APLA considers "Bridging the Gap" for their cover image'  }
 ]
 
 export const expositions = [
