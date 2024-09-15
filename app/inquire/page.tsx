@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { Inquire } from '@/components/Inquire/Inquire';
+import { InquireForm } from '@/components/Inquire/InquireForm';
 
 export default function page() {
   return (
     <div>
-      <Inquire />
+      <InquireForm />
     </div>
   );
 }

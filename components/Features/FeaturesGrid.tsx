@@ -33,14 +33,14 @@ const data = [
   {
     title: 'Works',
     description:
-      'Metin is an artist who has dedicated himself to the evolution of mankind with his themes. His paintings are not only a display of vivid colors and powerful imagery, but also a celebration of oneness with the Human Family in the Circle of Life.',
+      'Metin is an artist who has dedicated himself to the evolution of mankind with his themes. His paintings are not only a display of vivid colors and powerful imagery, but also...',
     icon: IconPalette,
     url: '/works',
   },
   {
     title: 'Features',
     description:
-      "Smithsonian Institution National Museum of Art Library, Sotheby's London, California Science Center, Exposition Park... and more!",
+      'Metin was recently honored by the Academy of Television Arts and Sciences for his contribution to the Emmy Award winning achievement...',
     icon: IconBulb,
     url: '/features',
   },

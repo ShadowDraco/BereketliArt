@@ -8,6 +8,7 @@ import classes from './CardsCarousel.module.css';
 import Quantum1 from '/public/FrontArt/QuantumHollywood1.jpg';
 import Quantum2 from '/public/FrontArt/QuantumHollywood2.jpg';
 import BurlesqueParody from '/public/FrontArt/BurlesqueParody.webp';
+import Carnival from '/public/FrontArt/CarnivalCurtain.jpg';
 
 interface CardProps {
   image: string;
@@ -85,6 +86,13 @@ const data = [
     image: BurlesqueParody.src,
     title: 'Burlesque Parody',
     url: '/works/burlesque-parody',
+    category: 'AVAILABLE',
+    background: true,
+  },
+  {
+    image: Carnival.src,
+    title: 'Carnival Curtain',
+    url: '/works/carnival-curtain',
     category: 'AVAILABLE',
     background: true,
   },

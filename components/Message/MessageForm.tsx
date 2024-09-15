@@ -1,11 +1,28 @@
 'use client';
 
+import { useRef, useState } from 'react';
 import { Text, Title, SimpleGrid, TextInput, Textarea, Button, Group } from '@mantine/core';
+import { ContactIconsList } from '../Inquire/InquireIcons';
+import classes from '../Inquire/Inquire.module.css';
 
-import { ContactIconsList } from './InquireIcons';
-import classes from './Inquire.module.css';
+export function MessageForm() {
+  const emailRef = useRef(null);
 
-export function Inquire() {
+  const nameRef = useRef(null);
+  const messageRef = useRef(null);
+
+  const [message, setMessage] = useState('');
+
+  const submit = async () => {
+    const response = await fetch(
+      `/api/message/${emailRef.current.value}/${nameRef.current.value}/${messageRef.current.value}`,
+      { method: 'POST' }
+    );
+    const res = await response.json();
+
+    setMessage(res.success);
+  };
+
   return (
     <div className={classes.wrapper}>
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
@@ -19,28 +36,43 @@ export function Inquire() {
         </div>
         <div className={classes.form}>
           <TextInput
+            ref={emailRef}
             label="Email"
             placeholder="your@email.com"
             required
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
+
           <TextInput
+            ref={nameRef}
+            required
             label="Name"
             placeholder="John Doe"
             mt="md"
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
           <Textarea
+            ref={messageRef}
             required
             label="Your message"
-            placeholder="How much is Hollywood 1?"
+            placeholder="How do I get involved with Metin's charity?"
             minRows={4}
             mt="md"
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
 
           <Group justify="flex-end" mt="md">
-            <Button className={classes.control}>Send message</Button>
+            <Text style={{ color: message === 'success' ? 'green' : 'red' }}>
+              {message && message}
+            </Text>
+            <Button
+              className={classes.control}
+              onClick={() => {
+                submit();
+              }}
+            >
+              Send message
+            </Button>
           </Group>
         </div>
       </SimpleGrid>
