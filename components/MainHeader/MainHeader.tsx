@@ -1,32 +1,33 @@
 'use client';
 
-import { Menu, Group, Center, Burger, Container } from '@mantine/core';
+import { Menu, Group, Center, Burger, Container, Flex, ActionIcon } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
+import { IconHome } from '@tabler/icons-react';
+import Link from 'next/link';
 import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
 import classes from './MainHeader.module.css';
 
 const links = [
-  { link: '/about', label: 'Features' },
+  { link: '/works', label: 'Works' },
+  { link: '/about', label: 'About' },
   {
     link: '#1',
-    label: 'Learn',
+    label: 'Features',
     links: [
-      { link: '/docs', label: 'Documentation' },
-      { link: '/resources', label: 'Resources' },
-      { link: '/community', label: 'Community' },
-      { link: '/blog', label: 'Blog' },
+      { link: '/press', label: 'Press' },
+      { link: '/features', label: 'Features' },
+      { link: '/charity', label: 'Charity' },
+      { link: '/store', label: 'Store' },
+      { link: '/more', label: 'More!' },
     ],
   },
-  { link: '/about', label: 'About' },
-  { link: '/pricing', label: 'Pricing' },
   {
     link: '#2',
-    label: 'Support',
+    label: 'Contact',
     links: [
-      { link: '/faq', label: 'FAQ' },
-      { link: '/demo', label: 'Book a demo' },
-      { link: '/forums', label: 'Forums' },
+      { link: '/contact', label: 'Contact' },
+      { link: '/inquire', label: 'Inquire' },
     ],
   },
 ];
@@ -36,14 +37,16 @@ export function MainHeader() {
 
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
-      <Menu.Item key={item.link}>{item.label}</Menu.Item>
+      <Link href={item.link} key={link.label}>
+        <Menu.Item key={item.link}>{item.label}</Menu.Item>
+      </Link>
     ));
 
     if (menuItems) {
       return (
         <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal>
           <Menu.Target>
-            <a
+            <Link
               href={link.link}
               className={classes.link}
               onClick={(event) => event.preventDefault()}
@@ -52,7 +55,7 @@ export function MainHeader() {
                 <span className={classes.linkLabel}>{link.label}</span>
                 <IconChevronDown size="0.9rem" stroke={1.5} />
               </Center>
-            </a>
+            </Link>
           </Menu.Target>
           <Menu.Dropdown>{menuItems}</Menu.Dropdown>
         </Menu>
@@ -60,14 +63,14 @@ export function MainHeader() {
     }
 
     return (
-      <a
+      <Link
         key={link.label}
         href={link.link}
         className={classes.link}
-        onClick={(event) => event.preventDefault()}
+        onClick={(event) => (link.link[0] === '#' ? event.preventDefault() : '')}
       >
         {link.label}
-      </a>
+      </Link>
     );
   });
 
@@ -75,8 +78,15 @@ export function MainHeader() {
     <header className={classes.header}>
       <Container size="md">
         <div className={classes.inner}>
-          <ColorSchemeToggle />
-          <Group gap={5} visibleFrom="sm">
+          <Flex gap={'lg'} justify={'center'} align="center">
+            <ActionIcon variant="subtle" size="input-sm">
+              <Link href="/" style={{ textDecoration: 'none', color: 'black' }}>
+                <IconHome size={28} />
+              </Link>
+            </ActionIcon>
+            <ColorSchemeToggle />
+          </Flex>
+          <Group gap={'md'} visibleFrom="sm">
             {items}
           </Group>
           <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />

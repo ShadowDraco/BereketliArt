@@ -74,7 +74,10 @@ export function MainFooter() {
           works.
           <br></br>
           <br></br>
-          Web Services by <Link href="https://github.com/shadowdraco">Ethan Storm</Link>
+          Web Services by{' '}
+          <Link href="https://github.com/shadowdraco" target="_blank">
+            Ethan Storm
+          </Link>
         </Text>
 
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
