@@ -72,9 +72,8 @@ export function Footer() {
         <Text size="sm">
           All works are created by Metin Bereketli. Please inquire if you have interest in his
           works.
-        </Text>
-        <br></br>
-        <Text size="sm">
+          <br></br>
+          <br></br>
           Web Services by <Link href="https://github.com/shadowdraco">Ethan Storm</Link>
         </Text>
 
