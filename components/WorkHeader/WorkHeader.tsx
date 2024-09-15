@@ -28,7 +28,7 @@ export function WorkHeader(props: Props) {
     <Box
       className={`${classes.hero} click-me`}
       onClick={() => {
-        toggle();
+         idle ? toggle(true) : toggle();
       }}
       style={{ marginTop: 10, backgroundImage: `url(${work.image.src})` }}
     >

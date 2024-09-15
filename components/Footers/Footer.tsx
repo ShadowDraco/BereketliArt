@@ -10,25 +10,25 @@ const data = [
   {
     title: 'About',
     links: [
-      { label: 'Bio', link: '#' },
-      { label: 'Works', link: '#' },
-      { label: 'Features', link: '#' },
-      { label: 'More', link: '#' },
+      { label: 'Bio', link: '/about' },
+      { label: 'Works', link: '/works' },
+      { label: 'Features', link: '/features' },
+      { label: 'More', link: '/more' },
     ],
   },
   {
     title: 'Involvement',
     links: [
-      { label: 'Charity', link: '#' },
-      { label: 'Press', link: '#' },
-      { label: 'Store', link: '#' },
+      { label: 'Charity', link: '/charity' },
+      { label: 'Press', link: '/press' },
+      { label: 'Store', link: '/store' },
     ],
   },
   {
     title: 'Contact',
     links: [
-      { label: 'Message us', link: '#' },
-      { label: 'Inquire', link: '#' },
+      { label: 'Message us', link: '/contact' },
+      { label: 'Inquire', link: '/inquire' },
     ],
   },
 ];
@@ -36,13 +36,7 @@ const data = [
 export function MainFooter() {
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
-      <Text<'a'>
-        key={index}
-        className={classes.link}
-        component="a"
-        href={link.link}
-        onClick={(event) => event.preventDefault()}
-      >
+      <Text<'a'> key={index} className={classes.link} component="a" href={link.link}>
         {link.label}
       </Text>
     ));
