@@ -5,10 +5,11 @@ import Gallery from '@/components/Carousels/LazyGallery/Gallery';
 import HollyWoodPainter from '@/public/Hero/HollyWoodPainterFull.webp';
 import PaintingJFK from '@/public/Hero/PaintingJFK.jpg';
 import Peacelandia from '@/public/Hero/PEACELANDIA.jpg';
+import PaintedMetin from '@/public/Hero/metin-painted.jpg';
 
 import classes from './HeroTitle.module.css';
 import { worldLeaders, charities, pressWorks, cities, diversity } from '@/public/works';
-import { UnderConstruction } from '../UnderConstruction/UnderConstruction';
+
 import LazyImage from '../Carousels/LazyGallery/LazyImage';
 
 export function GridAsymmetrical() {
@@ -52,7 +53,6 @@ export function GridAsymmetrical() {
     alt: 'Original "Cities" series by Metin Bereketli!',
   }));
 
-
   const diversityGallery = diversity.map((work) => ({
     src: work.image.src,
     width: work.image.width,
@@ -60,7 +60,7 @@ export function GridAsymmetrical() {
     caption: work.title,
     url: work.name,
     noLink: true,
-    alt: 'Metin Bereketli\'s Diversity collection',
+    alt: "Metin Bereketli's Diversity collection",
   }));
 
   const PaintingJFKImage = {
@@ -78,6 +78,15 @@ export function GridAsymmetrical() {
     caption: 'Peacelandia by Metin Bereketli',
     noLink: true,
     alt: "Metin's Peacelandia painting,~ the healing power of Red White and Blue",
+  };
+
+  const PaintedMetinImage = {
+    src: PaintedMetin.src,
+    width: PaintedMetin.width,
+    height: PaintedMetin.height,
+    caption: 'Metin Bereketli',
+    noLink: true,
+    alt: "Metin's Passion for art, and compassion for others extends to no end.",
   };
 
   return (
@@ -100,20 +109,14 @@ export function GridAsymmetrical() {
         <Space h="xl" />
         <Gallery images={worldLeadersGallery} />
         <Space h="xl" />
-        <Group grow preventGrowOverflow={false} visibleFrom="sm" wrap="nowrap">
-          <Text className={classes.description} style={{ minWidth: '50%' }}>
-            If all Metin did was paint in his studio in isolation from the world he would still be a
-            great artist in his own right. But he is and has always been connected with his
-            environment through many charitable programs he has supported to help those in need.
-          </Text>
-          <LazyImage {...PaintingJFKImage} />
-        </Group>
-        <Group grow preventGrowOverflow={false} hiddenFrom="sm" wrap="wrap">
+
+        <Group grow preventGrowOverflow={false} wrap="wrap">
           <Text className={classes.description}>
             If all Metin did was paint in his studio in isolation from the world he would still be a
             great artist in his own right. But he is and has always been connected with his
             environment through many charitable programs he has supported to help those in need.
           </Text>
+
           <LazyImage {...PaintingJFKImage} />
         </Group>
         <Space h="xl" />
@@ -178,98 +181,56 @@ export function GridAsymmetrical() {
           <LazyImage {...PeacelandiaImage} />
         </Group>
         <Space h="xl" />
-        
-        <Group grow preventGrowOverflow={false} visibleFrom="sm" wrap="wrap">
-          <Text className={classes.description} style={{  }}>
-          One cannot emphasize enough Metin’s special focus on diversity. 
-          His fervent wish is to bring together all peoples from all kinds of religious, ethnic and 
-          cultural backgrounds. That’s his definition of Heaven On Earth and it’s easy to see that 
-          dedication in over a dozen original works he has created in the past. 
 
+        <Group grow preventGrowOverflow={false} visibleFrom="sm" wrap="wrap">
+          <Text className={classes.description} style={{}}>
+            One cannot emphasize enough Metin’s special focus on diversity. His fervent wish is to
+            bring together all peoples from all kinds of religious, ethnic and cultural backgrounds.
+            That’s his definition of Heaven On Earth and it’s easy to see that dedication in over a
+            dozen original works he has created in the past.
           </Text>
           <Gallery images={diversityGallery} />
         </Group>
         <Group grow preventGrowOverflow={false} hiddenFrom="sm" wrap="wrap">
           <Text className={classes.description}>
-          One cannot emphasize enough Metin’s special focus on diversity. 
-          His fervent wish is to bring together all peoples from all kinds of religious, ethnic and 
-          cultural backgrounds. That’s his definition of Heaven On Earth and it’s easy to see that 
-          dedication in over a dozen original works he has created in the past. 
+            One cannot emphasize enough Metin’s special focus on diversity. His fervent wish is to
+            bring together all peoples from all kinds of religious, ethnic and cultural backgrounds.
+            That’s his definition of Heaven On Earth and it’s easy to see that dedication in over a
+            dozen original works he has created in the past.
           </Text>
           <Gallery images={diversityGallery} />
         </Group>
         <Space h="xl" />
-        <Text className={classes.description} style={{ fontWeight: 'bold'}}>
-        Metin's artwork have appeared in the following MOVIES and TV shows: 
-          </Text>
-          <Text className={classes.description} style={{ fontWeight: 'lighter', fontSize: '15px'}}>
-          • IT'S ALWAYS SUNNY IN PHILADELPHIA 
-          • CHIP 'N' DALE:RESCUE RANGERS 
-          • UNITED STATES OF AL 
-          • THE NEIGHBORHOOD 
-          • SYDNEY TO THE MAX 
-          • THE KOMINSKY METHOD 
-          • GREY'S ANATOMY 
-          • SNEAKY PETE 
-          • THE OPENING ACT  
-          • LUCIFER 
-          • CODE BLACK 
-          • SHUT EYE 
-          • TRANSPARENT 
-          • A TO Z 
-          • HARRY’S LAW 
-          • HOMELAND 
-          • ARMY WIVES 
-          • SOUTH OF HELL 
-          • ROYAL PAINS 
-          • CSI: NY 
-          • HOW I MET YOUR MOTHER 
-          • NUMBERS 
-          • ER 
-          • HOUSE 
-          • FRIENDS 
-          • FRASIER 
-          • THE ASSISTANTS 
-          • THE DEFENDERS 
-          • THE APPRENTICE 
-          • GILMORE GIRLS 
-          • PRIVILEGED 
-          • WILL AND GRACE
-          • BECKER 
-          • TWO AND A HALF MEN 
-          • DREW CAREY SHOW 
-          • SEVENTH HEAVEN 
-          • CHICAGO HOPE 
-          • PASSIONS 
-          • THE BOLD AND THE BEAUTIFUL 
-          • GENERAL HOSPITAL 
-          • PORT CHARLES 
-          • ALL OF US  NOAH'S ARK  
-          • SUNSET BEACH  THE PRETENDER 
-          • JESSE  PARTY OF FIVE  
-          • ANGEL 
-          • FELICITY 
-          • WASTELAND
-          • VERONICA'S CLOSET 
-          • SHASTA MCNASTY 
-          • MEN WHO STARE AT GOATS 
-          • POSEIDON 
-          • LANDSLIDE 
-          • KILLER FLOOD THE LITTLE DEATH
-          • THE HEART OF CHRISTMAS 
-          • KATIE COURIC & MATT LAUER “TODAY” SHOW  
-          • AND MANY MORE…
-          </Text>
-          <Space h="xl" />
-          <Text className={classes.description}>
-          Metin was recently honored by the Academy of Television Arts and Sciences for his contribution to the Emmy Award winning achievement of the TV show “Transparent” and "How I Met Your Mother"
-          </Text>
+
+        <Group grow preventGrowOverflow={false} wrap="wrap">
+          <LazyImage {...PaintedMetinImage} />
+        </Group>
+        <Space h="xl" />
+
+        <Text className={classes.description} style={{ fontWeight: 'bold' }}>
+          Metin&apos;s artwork have appeared in the following MOVIES and TV shows:
+        </Text>
+        <Text className={classes.description} style={{ fontWeight: 'lighter', fontSize: '15px' }}>
+          • IT&apos;S ALWAYS SUNNY IN PHILADELPHIA • CHIP &apos;N&apos; DALE:RESCUE RANGERS • UNITED
+          STATES OF AL • THE NEIGHBORHOOD • SYDNEY TO THE MAX • THE KOMINSKY METHOD • GREY&apos;S
+          ANATOMY • SNEAKY PETE • THE OPENING ACT • LUCIFER • CODE BLACK • SHUT EYE • TRANSPARENT •
+          A TO Z • HARRY&apos;S LAW • HOMELAND • ARMY WIVES • SOUTH OF HELL • ROYAL PAINS • CSI: NY
+          • HOW I MET YOUR MOTHER • NUMBERS • ER • HOUSE • FRIENDS • FRASIER • THE ASSISTANTS • THE
+          DEFENDERS • THE APPRENTICE • GILMORE GIRLS • PRIVILEGED • WILL AND GRACE • BECKER • TWO
+          AND A HALF MEN • DREW CAREY SHOW • SEVENTH HEAVEN • CHICAGO HOPE • PASSIONS • THE BOLD AND
+          THE BEAUTIFUL • GENERAL HOSPITAL • PORT CHARLES • ALL OF US NOAH&apos;S ARK • SUNSET BEACH
+          THE PRETENDER • JESSE PARTY OF FIVE • ANGEL • FELICITY • WASTELAND • VERONICA&apos;S
+          CLOSET • SHASTA MCNASTY • MEN WHO STARE AT GOATS • POSEIDON • LANDSLIDE • KILLER FLOOD THE
+          LITTLE DEATH • THE HEART OF CHRISTMAS • KATIE COURIC & MATT LAUER “TODAY” SHOW • AND MANY
+          MORE…
+        </Text>
+        <Space h="xl" />
+        <Text className={classes.description}>
+          Metin was recently honored by the Academy of Television Arts and Sciences for his
+          contribution to the Emmy Award winning achievement of the TV show “Transparent” and
+          &quot;How I Met Your Mother&quot;
+        </Text>
       </Container>
-      
     </>
-
-
-
-
   );
 }
