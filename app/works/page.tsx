@@ -16,6 +16,7 @@ export default function page() {
     height: work.image.height,
     caption: work.title,
     url: work.name,
+    zoom: true,
     alt: 'Artwork by Metin Bereketli',
   }));
 
