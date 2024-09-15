@@ -11,7 +11,7 @@ interface CardProps {
   image: string;
   title: string;
   category: string;
-  color: string;
+  color?: string;
 }
 
 function Card({ image, title, category, color }: CardProps) {
