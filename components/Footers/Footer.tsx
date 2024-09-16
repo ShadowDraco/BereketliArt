@@ -81,29 +81,36 @@ export function MainFooter() {
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
           <Link href="https://twitter.com/healingpainter" target="_blank">
             <ActionIcon size="lg" color="gray" variant="subtle">
-              <IconBrandX style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+              <IconBrandX style={{ width: rem(25), height: rem(25) }} stroke={1.5} />
             </ActionIcon>
           </Link>
           <Link href="https://www.youtube.com/@metinbereketli7681" target="_blank">
             {' '}
             <ActionIcon size="lg" color="gray" variant="subtle">
-              <IconBrandYoutube style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+              <IconBrandYoutube style={{ width: rem(25), height: rem(25) }} stroke={1.5} />
             </ActionIcon>
           </Link>
           <Link href="https://www.instagram.com/healingpainter" target="_blank">
             <ActionIcon size="lg" color="gray" variant="subtle">
-              <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+              <IconBrandInstagram style={{ width: rem(25), height: rem(25) }} stroke={1.5} />
             </ActionIcon>
           </Link>
           <Link href="https://www.linkedin.com/in/metinbereketli/" target="_blank">
             <ActionIcon size="lg" color="gray" variant="subtle">
-              <IconBrandLinkedin style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+              <IconBrandLinkedin style={{ width: rem(25), height: rem(25) }} stroke={1.5} />
             </ActionIcon>
           </Link>
 
           <Link href="https://m.imdb.com/name/nm0073484/" target="_blank">
             <ActionIcon size="lg" color="gray" variant="subtle">
-              <SiImdb style={{ width: rem(18), height: rem(18), border: '1px #aaaaaa solid' }} />
+              <SiImdb
+                style={{
+                  width: rem(25),
+                  height: rem(25),
+                  border: '1px #ababab solid',
+                  borderRadius: 3,
+                }}
+              />
             </ActionIcon>
           </Link>
         </Group>
