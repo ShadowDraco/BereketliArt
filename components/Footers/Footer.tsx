@@ -1,7 +1,14 @@
 'use client';
 
 import { Text, Container, ActionIcon, Group, rem } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconBrandLinkedin } from '@tabler/icons-react';
+import {
+  IconBrandX,
+  IconBrandYoutube,
+  IconBrandInstagram,
+  IconBrandLinkedin,
+} from '@tabler/icons-react';
+
+import { SiImdb } from 'react-icons/si';
 
 import Link from 'next/link';
 import classes from './Footer.module.css';
@@ -74,7 +81,7 @@ export function MainFooter() {
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
           <Link href="https://twitter.com/healingpainter" target="_blank">
             <ActionIcon size="lg" color="gray" variant="subtle">
-              <IconBrandTwitter style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+              <IconBrandX style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
             </ActionIcon>
           </Link>
           <Link href="https://www.youtube.com/@metinbereketli7681" target="_blank">
@@ -91,6 +98,12 @@ export function MainFooter() {
           <Link href="https://www.linkedin.com/in/metinbereketli/" target="_blank">
             <ActionIcon size="lg" color="gray" variant="subtle">
               <IconBrandLinkedin style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+            </ActionIcon>
+          </Link>
+
+          <Link href="https://m.imdb.com/name/nm0073484/" target="_blank">
+            <ActionIcon size="lg" color="gray" variant="subtle">
+              <SiImdb style={{ width: rem(18), height: rem(18), border: '1px #aaaaaa solid' }} />
             </ActionIcon>
           </Link>
         </Group>
