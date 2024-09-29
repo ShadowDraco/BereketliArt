@@ -1,85 +1,87 @@
 //? Works
-import ana from './works/ana.jpg';
-import burlesque from './works/burlesque-parody.jpg';
-import carnival from './works/carnival-curtain.jpg';
-import dancers from './works/dancers.jpg';
-import diversity2 from './works/diversity-2.jpg';
-import diversity5 from './works/diversity-5.jpg';
-import windows2 from './works/windows-2.jpg';
-import newyorksdna from './works/new-yorks-dna.jpg';
-//import golden from './works/golden-eagles.jpg';
-//import intricacy from './works/intricacy.jpg';
-//import lunch from './works/lunch-time-melody.jpg';
-import petras from './works/petras-maximus.jpg';
-import quantum1 from './works/quantum-hollywood-1.jpg';
-import quantum2 from './works/quantum-hollywood-2.jpg';
+import ana from './works/ana.webp';
+import burlesque from './works/burlesque-parody.webp';
+import carnival from './works/carnival-curtain.webp';
+import dancers from './works/dancers.webp';
+import diversity2 from './works/diversity-2.webp';
+import diversity5 from './works/diversity-5.webp';
+import windows2 from './works/windows-2.webp';
+import newyorksdna from './works/new-yorks-dna.webp';
+//import golden from './works/golden-eagles.webp';
+//import intricacy from './works/intricacy.webp';
+//import lunch from './works/lunch-time-melody.webp';
+import petras from './works/petras-maximus.webp';
+import quantum1 from './works/quantum-hollywood-1.webp';
+import quantum2 from './works/quantum-hollywood-2.webp';
 
 //? World Leaders
 
-import jfk from './worldLeaders/JFK.jpg';
-import lincoln from './worldLeaders/LINCOLN.jpg';
-import martin from './worldLeaders/MARTIN.jpg';
-import reagan from './worldLeaders/REAGAN.jpg';
+import jfk from './worldLeaders/JFK.webp';
+import lincoln from './worldLeaders/LINCOLN.webp';
+import martin from './worldLeaders/MARTIN.webp';
+import reagan from './worldLeaders/REAGAN.webp';
 
 //? Charity
 
-import jarvee from './charity/jarvee-metin.jpg';
-import marjcohen from './charity/MarjCohen.jpg';
-import mcdonne from './charity/McDonne.jpg';
+import jarvee from './charity/jarvee-metin.webp';
+import marjcohen from './charity/MarjCohen.webp';
+import mcdonne from './charity/McDonne.webp';
 
 //? Press
 
-import potionMagazine from './press/potionMagazine.jpg';
-import amorEnAccion from './press/EspirituCatolico.jpg';
-import autismHonor from './press/autismHonor.jpg';
-import autismAmerica from './press/autism-america.jpg';
-import friendsNYPost from './press/friends-ny-post.jpg';
-import friendsTimes from './press/friends-times.jpg';
-import gardenOfPage from './press/gardens-of-page.jpg';
-import tribuna from './press/tribuna.jpg';
-import dailyBreeze from './press/DailyBreeze.jpg';
-import triumphAwards from './press/TriumphAwards.jpg';
-import ameriface from './press/ameriface.jpg';
-import asymAwards from './press/asym-awards.jpg';
-import bestBuddies from './press/best-buddies.jpg';
-import bridgingTheGap from './press/bridging-the-gap-apla.jpg';
-import carosuelOfHope from './press/carosuel-of-hope.jpg';
-import cornucopicaMagazine from './press/cornucopia-magazine.jpg';
-import csiNY from './press/csi-ny.jpg';
-import darfukForum from './press/darfuk-forum.jpg';
-import davidWoscowOscar from './press/david-woscow-oscar.jpg';
-import eluxeMagazine from './press/eluxe-magazine.jpg';
-import enviornmentalBiology from './press/enviornmental-biology.jpg';
-import erShow from './press/er-show.jpg';
-import Idopwd1 from './press/Idopwd1.jpg';
-import johnHopkinsUniversity from './press/john-hopkins-university.jpg';
-import justiceRuth from './press/justice-ruth-ginsburg.jpg';
-import justiceSandra from './press/justice-sandra-day.jpg';
-import shrinersHospital from './press/shriners-hospital.jpg';
-import socalSpecialOlympics from './press/socal-special-olympics.jpg';
-import soulMadeFriends from './press/soul-made-friends.jpg';
-import stopDomesticViolence from './press/stop-domestic-violence.jpg';
-import tomSulivanChildrensCenter from './press/tom-sulivan-childrens-center.jpg';
+import potionMagazine from './press/potionMagazine.webp';
+import amorEnAccion from './press/EspirituCatolico.webp';
+import autismHonor from './press/autismHonor.webp';
+import autismAmerica from './press/autism-america.webp';
+import friendsNYPost from './press/friends-ny-post.webp';
+import friendsTimes from './press/friends-times.webp';
+import gardenOfPage from './press/gardens-of-page.webp';
+import tribuna from './press/tribuna.webp';
+import dailyBreeze from './press/DailyBreeze.webp';
+import triumphAwards from './press/TriumphAwards.webp';
+import ameriface from './press/ameriface.webp';
+import asymAwards from './press/asym-awards.webp';
+import bestBuddies from './press/best-buddies.webp';
+import bridgingTheGap from './press/bridging-the-gap-apla.webp';
+import carosuelOfHope from './press/carosuel-of-hope.webp';
+import cornucopicaMagazine from './press/cornucopia-magazine.webp';
+import csiNY from './press/csi-ny.webp';
+import darfukForum from './press/darfuk-forum.webp';
+import davidWoscowOscar from './press/david-woscow-oscar.webp';
+import eluxeMagazine from './press/eluxe-magazine.webp';
+import enviornmentalBiology from './press/enviornmental-biology.webp';
+import erShow from './press/er-show.webp';
+import Idopwd1 from './press/Idopwd1.webp';
+import johnHopkinsUniversity from './press/john-hopkins-university.webp';
+import justiceRuth from './press/justice-ruth-ginsburg.webp';
+import justiceSandra from './press/justice-sandra-day.webp';
+import shrinersHospital from './press/shriners-hospital.webp';
+import socalSpecialOlympics from './press/socal-special-olympics.webp';
+import soulMadeFriends from './press/soul-made-friends.webp';
+import stopDomesticViolence from './press/stop-domestic-violence.webp';
+import tomSulivanChildrensCenter from './press/tom-sulivan-childrens-center.webp';
 
 //? Cities
 
-import cincinnati from './cities/Cincinnati.jpg';
-import lasVegas from './cities/LasVegas.jpg';
-import saskatoon from './cities/SaskatoonCanada.jpg';
+import cincinnati from './cities/Cincinnati.webp';
+import lasVegas from './cities/LasVegas.webp';
+import saskatoon from './cities/SaskatoonCanada.webp';
 
 //? Expositions
 
-import rock from './expositions/rock.jpg';
-import sean from './expositions/sean.jpg';
-import stalone from './expositions/stalone.jpg';
-import keanu from './expositions/keanu.jpg';
-import EXreagan from './expositions/reagan.jpg';
-import EXjfk from './expositions/jfk.jpg';
-import EXlincoln from './expositions/lincoln.jpg';
-import petrus from './expositions/petrus.jpg';
-import autism from './expositions/autism.jpg';
-import EXFriends from './expositions/friends.jpg';
-import primitiveEMMY from './expositions/primitive-emmy.jpg';
+import rock from './expositions/rock.webp';
+import sean from './expositions/sean.webp';
+import stalone from './expositions/stalone.webp';
+import keanu from './expositions/keanu.webp';
+import EXreagan from './expositions/reagan.webp';
+import EXjfk from './expositions/jfk.webp';
+import EXlincoln from './expositions/lincoln.webp';
+import petrus from './expositions/petrus.webp';
+import autism from './expositions/autism.webp';
+import EXFriends from './expositions/friends.webp';
+import primitiveEMMY from './expositions/primitive-emmy.webp';
+import hero2 from './expositions/MetinHero2.webp';
+import hero3 from './expositions/MetinHero3.webp';
 
 export const works = [
   {
@@ -413,6 +415,12 @@ export const press = [
 
 export const expositions = [
   {
+    image: hero2,
+    title: 'Bereketli Style',
+    name: 'metin-hero-2',
+    description: 'Metin poses in front of his art',
+  },
+  {
     image: rock,
     title: 'The Rock',
     name: 'exposition-the-rock',
@@ -478,5 +486,11 @@ export const expositions = [
     title: 'Primitive Emmy',
     name: 'exposition-primitive-emmy',
     description: "Metin's primitive Emmy Award",
+  },
+  {
+    image: hero3,
+    title: 'Bereketli Style',
+    name: 'metin-hero-3',
+    description: 'Metin poses in front of his art',
   },
 ];

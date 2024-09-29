@@ -5,11 +5,11 @@ import { useMediaQuery, useIdle, useToggle } from '@mantine/hooks';
 import { Paper, Title, Button, useMantineTheme, Text, rem } from '@mantine/core';
 import Link from 'next/link';
 import classes from './CardsCarousel.module.css';
-import Quantum1 from '/public/FrontArt/QuantumHollywood1.jpg';
-import Quantum2 from '/public/FrontArt/QuantumHollywood2.jpg';
+import Quantum1 from '/public/FrontArt/QuantumHollywood1.webp';
+import Quantum2 from '/public/FrontArt/QuantumHollywood2.webp';
 import BurlesqueParody from '/public/FrontArt/BurlesqueParody.webp';
-import Carnival from '/public/FrontArt/CarnivalCurtain.jpg';
-import Petras from '/public/FrontArt/PetrasMaximus.jpg';
+import Carnival from '/public/FrontArt/CarnivalCurtain.webp';
+import Petras from '/public/FrontArt/PetrasMaximus.webp';
 
 interface CardProps {
   image: string;

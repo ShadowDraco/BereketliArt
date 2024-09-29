@@ -3,9 +3,9 @@ import Image from 'next/image';
 import Gallery from '@/components/Carousels/LazyGallery/Gallery';
 
 import HollyWoodPainter from '@/public/Hero/HollyWoodPainterFull.webp';
-import PaintingJFK from '@/public/Hero/PaintingJFK.jpg';
-import Peacelandia from '@/public/Hero/PEACELANDIA.jpg';
-import PaintedMetin from '@/public/Hero/metin-painted.jpg';
+import PaintingJFK from '@/public/Hero/PaintingJFK.webp';
+import Peacelandia from '@/public/Hero/PEACELANDIA.webp';
+import PaintedMetin from '@/public/Hero/metin-painted.webp';
 
 import classes from './HeroTitle.module.css';
 import { worldLeaders, charities, pressWorks, cities, diversity } from '@/public/works';
