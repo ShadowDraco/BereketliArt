@@ -82,6 +82,9 @@ import EXFriends from './expositions/friends.webp';
 import primitiveEMMY from './expositions/primitive-emmy.webp';
 import hero2 from './expositions/MetinHero2.webp';
 import hero3 from './expositions/MetinHero3.webp';
+import kerryMetin from './expositions/kerry-washington-and-metin.webp';
+import martinMetin from './expositions/martin-and-metin.webp';
+import expositionHandshake from './expositions/exposition-handshake-1.webp';
 
 export const works = [
   {
@@ -432,7 +435,12 @@ export const expositions = [
     name: 'exposition-petrus-maximus',
     description: "Metin's original artwork 'Petrus Maximus'",
   },
-
+  {
+    image: kerryMetin,
+    title: 'Kerry Washington Greets Metin',
+    name: 'kerry-washington-and-metin',
+    description: "Metin Greets Kerry Washington as she admires Metin's art",
+  },
   {
     image: EXjfk,
     title: 'John F. Kennedy',
@@ -452,6 +460,12 @@ export const expositions = [
     description: "Metin's artwork Ronald Reagan",
   },
   {
+    image: martinMetin,
+    title: 'Martin Landau greets Metin',
+    name: 'martin-and-metin',
+    description: "Metin Greets Martin as he admires Metin's art",
+  },
+  {
     image: sean,
     title: 'Sean William Scott',
     name: 'exposition-sean-william-scott',
@@ -468,6 +482,12 @@ export const expositions = [
     title: 'Autism Advocate',
     name: 'exposition-autism advocate',
     description: 'Metin uses his talents to give back',
+  },
+  {
+    image: expositionHandshake,
+    title: "Metin's art is recognized by many",
+    name: 'exposition-handshake-1',
+    description: 'Metin Greets enjoyers of his art',
   },
   {
     image: EXlincoln,
