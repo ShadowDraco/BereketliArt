@@ -485,9 +485,9 @@ export const expositions = [
   },
   {
     image: expositionHandshake,
-    title: "Metin's art is recognized by many",
+    title: "Metin's art is recognized by Ben Kingsley",
     name: 'exposition-handshake-1',
-    description: 'Metin Greets enjoyers of his art',
+    description: 'Metin Greets Ben Kingsley as an enjoyer of his art',
   },
   {
     image: EXlincoln,
