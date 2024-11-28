@@ -90,7 +90,7 @@ export function MainFooter() {
               <IconBrandYoutube style={{ width: rem(25), height: rem(25) }} stroke={1.5} />
             </ActionIcon>
           </Link>
-          <Link href="https://www.instagram.com/healingpainter" target="_blank">
+          <Link href="https://www.instagram.com/artistspr" target="_blank">
             <ActionIcon size="lg" color="gray" variant="subtle">
               <IconBrandInstagram style={{ width: rem(25), height: rem(25) }} stroke={1.5} />
             </ActionIcon>
