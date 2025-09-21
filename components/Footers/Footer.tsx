@@ -73,7 +73,7 @@ export function MainFooter() {
           <br></br>
           <br></br>
           Web Services by{' '}
-          <Link href="https://github.com/shadowdraco" target="_blank">
+          <Link href="https://stormcodes.com" target="_blank">
             Ethan Storm
           </Link>
         </Text>
